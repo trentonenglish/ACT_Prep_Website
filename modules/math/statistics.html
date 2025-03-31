@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics & Probability | ACT Quest</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/math-modules.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container-fluid game-container">
+        <!-- Header/Navigation -->
+        <header class="game-header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../../index.html">ACT Quest: Path to 30+</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../../index.html#math">Math Arena</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#english">English Realm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#reading">Reading Kingdom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#progress">Your Journey</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+            <!-- Module Header -->
+            <section class="module-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h1>Statistics & Probability</h1>
+                            <p class="lead">Master data analysis and chance to boost your ACT Math score!</p>
+                            <div class="module-progress">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="module-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module Navigation -->
+            <section class="module-navigation">
+                <div class="container">
+                    <ul class="nav nav-pills nav-fill" id="moduleTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="learn-tab" data-bs-toggle="tab" data-bs-target="#learn" type="button" role="tab">Learn</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="practice-tab" data-bs-toggle="tab" data-bs-target="#practice" type="button" role="tab">Practice</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="challenge-tab" data-bs-toggle="tab" data-bs-target="#challenge" type="button" role="tab">Challenge</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="test-tab" data-bs-toggle="tab" data-bs-target="#test" type="button" role="tab">Test</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Module Content -->
+            <section class="module-content">
+                <div class="container">
+                    <div class="tab-content" id="moduleTabContent">
+                        <!-- Learn Tab -->
+                        <div class="tab-pane fade show active" id="learn" role="tabpanel" aria-labelledby="learn-tab">
+                            <div class="learn-content">
+                                <h2>Statistics & Probability Fundamentals</h2>
+                                
+                                <div class="learn-section">
+                                    <h3>Descriptive Statistics</h3>
+                                    <p>Descriptive statistics summarize and organize data. Understanding these concepts is essential for the ACT Math section.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Measures of Central Tendency</h4>
+                                        <ul>
+                                            <li><strong>Mean (Average):</strong> The sum of all values divided by the number of values</li>
+                                            <li><strong>Median:</strong> The middle value when data is arranged in order (or average of two middle values if there's an even number of data points)</li>
+                                            <li><strong>Mode:</strong> The value that appears most frequently in the data set</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>Find the mean, median, and mode of the following data set: 4, 7, 10, 8, 4, 9, 7</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Calculate the mean.</p>
+                                            <div class="math-formula">
+                                                \[ \text{Mean} = \frac{\text{Sum of all values}}{\text{Number of values}} = \frac{4 + 7 + 10 + 8 + 4 + 9 + 7}{7} = \frac{49}{7} = 7 \]
+                                            </div>
+                                            
+                                            <p><strong>Step 2:</strong> Find the median by arranging the data in order.</p>
+                                            <p>Ordered data: 4, 4, 7, 7, 8, 9, 10</p>
+                                            <p>The middle value (4th out of 7 values) is 7.</p>
+                                            
+                                            <p><strong>Step 3:</strong> Identify the mode.</p>
+                                            <p>The values 4 and 7 both appear twice, while all other values appear once. So the modes are 4 and 7.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Measures of Dispersion</h4>
+                                        <ul>
+                                            <li><strong>Range:</strong> The difference between the maximum and minimum values in a data set</li>
+                                            <li><strong>Variance:</strong> The average of the squared differences from the mean</li>
+                                            <li><strong>Standard Deviation:</strong> The square root of the variance, indicating how spread out the data is</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>Find the range of the data set: 12, 15, 9, 18, 11</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Identify the maximum and minimum values.</p>
+                                            <p>Maximum value = 18</p>
+                                            <p>Minimum value = 9</p>
+                                            
+                                            <p><strong>Step 2:</strong> Calculate the range.</p>
+                                            <div class="math-formula">
+                                                \[ \text{Range} = \text{Maximum} - \text{Minimum} = 18 - 9 = 9 \]
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Data Representation</h3>
+                                    <p>The ACT often includes questions about interpreting data from various types of graphs and charts.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Types of Data Displays</h4>
+                                        <ul>
+                                            <li><strong>Bar Graphs:</strong> Used to compare categories</li>
+                                            <li><strong>Line Graphs:</strong> Show trends over time or continuous data</li>
+                                            <li><strong>Pie Charts:</strong> Display parts of a whole as percentages</li>
+                                            <li><strong>Scatter Plots:</strong> Show relationships between two variables</li>
+                                            <li><strong>Box Plots (Box-and-Whisker Plots):</strong> Display the distribution of data based on quartiles</li>
+                                            <li><strong>Histograms:</strong> Show frequency distributions of continuous data</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>The box plot below shows the distribution of test scores for a class. What is the median score?</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Identify the median from the box plot.</p>
+                                            <p>In a box plot, the vertical line inside the box represents the median.</p>
+                                            <p>From the box plot, we can see that the median is 78.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Probability</h3>
+                                    <p>Probability measures the likelihood of an event occurring. It's a common topic on the ACT Math section.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Basic Probability</h4>
+                                        <ul>
+                                            <li><strong>Probability of an Event:</strong> P(Event) = Number of favorable outcomes / Total number of possible outcomes</li>
+                                            <li><strong>Probability Range:</strong> 0 ≤ P(Event) ≤ 1
+                                                <ul>
+                                                    <li>P(Event) = 0: The event is impossible</li>
+                                                    <li>P(Event) = 1: The event is certain</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Complementary Events:</strong> P(not Event) = 1 - P(Event)</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>A bag contains 5 red marbles, 3 blue marbles, and 2 green marbles. If a marble is drawn at random, what is the probability of drawing a red marble?</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Count the total number of marbles.</p>
+                                            <p>Total number of marbles = 5 + 3 + 2 = 10</p>
+                                            
+                                            <p><strong>Step 2:</strong> Calculate the probability.</p>
+                                            <div class="math-formula">
+                                                \[ P(\text{red}) = \frac{\text{Number of red marbles}}{\text{Total number of marbles}} = \frac{5}{10} = \frac{1}{2} = 0.5 \]
+                                            </div>
+                                            <p>The probability of drawing a red marble is 0.5 or 50%.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Compound Probability</h4>
+                                        <ul>
+                                            <li><strong>Independent Events:</strong> The outcome of one event does not affect the outcome of the other
+                                                <ul>
+                                                    <li>P(A and B) = P(A) × P(B)</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Mutually Exclusive Events:</strong> Events that cannot occur simultaneously
+                                                <ul>
+                                                    <li>P(A or B) = P(A) + P(B)</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Non-Mutually Exclusive Events:</strong> Events that can occur simultaneously
+                                                <ul>
+                                                    <li>P(A or B) = P(A) + P(B) - P(A and B)</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>A die is rolled twice. What is the probability of rolling a 6 on the first roll and an even number on the second roll?</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Identify the individual probabilities.</p>
+                                            <p>P(rolling a 6 on first roll) = 1/6</p>
+                                            <p>P(rolling an even number on second roll) = 3/6 = 1/2 (even numbers are 2, 4, 6)</p>
+                                            
+                                            <p><strong>Step 2:</strong> Since these are independent events, multiply the probabilities.</p>
+                                            <div class="math-formula">
+                                                \[ P(\text{6 on first AND even on second}) = P(\text{6 on first}) \times P(\text{even on second}) = \frac{1}{6} \times \frac{1}{2} = \frac{1}{12} \]
+                                            </div>
+                                            <p>The probability is 1/12 or approximately 0.083 or 8.3%.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Counting Principles</h3>
+                                    <p>Counting principles help determine the number of possible outcomes in various scenarios.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Fundamental Counting Principle</h4>
+                                        <p>If there are m ways to do one task and n ways to do another task, then there are m × n ways to do both tasks.</p>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>A restaurant offers 4 appetizers, 6 main courses, and 3 desserts. How many different three-course meals can be created?</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Apply the fundamental counting principle.</p>
+                                            <div class="math-formula">
+                                                \[ \text{Number of possible meals} = \text{Number of appetizers} \times \text{Number of main courses} \times \text{Number of desserts} = 4 \times 6 \times 3 = 72 \]
+                                            </div>
+                                            <p>There are 72 different possible three-course meals.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Permutations and Combinations</h4>
+                                        <ul>
+                                            <li><strong>Permutations:</strong> Arrangements where order matters
+                                                <ul>
+                                                    <li>P(n,r) = n! / (n-r)! = Number of ways to arrange r items from n distinct items</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Combinations:</strong> Selections where order doesn't matter
+                                                <ul>
+                                                    <li>C(n,r) = n! / [r!(n-r)!] = Number of ways to select r items from n distinct items</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>In how many ways can a committee of 3 people be formed from a group of 8 people?</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Since the order doesn't matter (a committee is a selection, not an arrangement), use the combination formula.</p>
+                                            <div class="math-formula">
+                                                \[ C(8,3) = \frac{8!}{3!(8-3)!} = \frac{8!}{3!5!} = \frac{8 \times 7 \times 6 \times 5!}{3 \times 2 \times 1 \times 5!} = \frac{8 \times 7 \times 6}{3 \times 2 \times 1} = \frac{336}{6} = 56 \]
+                                            </div>
+                                            <p>There are 56 different possible committees of 3 people from a group of 8 people.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Experimental Probability and Expected Value</h3>
+                                    <p>The ACT may include questions about experimental probability and expected value.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Experimental vs. Theoretical Probability</h4>
+                                        <ul>
+                                            <li><strong>Theoretical Probability:</strong> Based on the possible outcomes</li>
+                                            <li><strong>Experimental Probability:</strong> Based on observed results from experiments or trials
+                                                <ul>
+                                                    <li>P(Event) = Number of times event occurs / Total number of trials</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>A coin is flipped 200 times, and heads appears 112 times. What is the experimental probability of getting heads?</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Calculate the experimental probability.</p>
+                                            <div class="math-formula">
+                                                \[ P(\text{heads}) = \frac{\text{Number of times heads appears}}{\text{Total number of flips}} = \frac{112}{200} = 0.56 \]
+                                            </div>
+                                            <p>The experimental probability of getting heads is 0.56 or 56%.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Expected Value</h4>
+                                        <p>Expected value is the average outcome of a random variable over many trials.</p>
+                                        <p>Expected Value = Sum of (Value × Probability)</p>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>In a game, you roll a die. If you roll a 1 or 2, you win $5. If you roll a 3 or 4, you win $10. If you roll a 5 or 6, you lose $15. What is the expected value of this game?</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Identify the values and their probabilities.</p>
+                                            <p>Value of rolling 1 or 2: $5 with probability 2/6 = 1/3</p>
+                                            <p>Value of rolling 3 or 4: $10 with probability 2/6 = 1/3</p>
+                                            <p>Value of rolling 5 or 6: -$15 with probability 2/6 = 1/3</p>
+                                            
+                                            <p><strong>Step 2:</strong> Calculate the expected value.</p>
+                                            <div class="math-formula">
+                                                \[ \text{Expected Value} = (5 \times \frac{1}{3}) + (10 \times \frac{1}{3}) + (-15 \times \frac{1}{3}) = \frac{5}{3} + \frac{10}{3} - \frac{15}{3} = \frac{15 - 15}{3} = 0 \]
+                                            </div>
+                                            <p>The expected value is $0, which means that, on average, you neither win nor lose money in this game over many plays.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="next-steps">
+                                    <h3>Ready to Practice?</h3>
+                                    <p>Now that you've learned the fundamentals of statistics and probability, test your knowledge with practice problems!</p>
+                                    <button class="btn btn-primary" onclick="document.getElementById('practice-tab').click()">Go to Practice</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Practice Tab -->
+                        <div class="tab-pane fade" id="practice" role="tabpanel" aria-labelledby="practice-tab">
+                            <div class="practice-content">
+                                <h2>Practice Problems</h2>
+                                <p>Test your understanding with these practice problems. Select a difficulty level to begin.</p>
+                                
+                                <div class="difficulty-selector">
+                                    <button class="btn btn-success" onclick="loadPracticeProblems('easy')">Easy</button>
+                                    <button class="btn btn-warning" onclick="loadPracticeProblems('medium')">Medium</button>
+                                    <button class="btn btn-danger" onclick="loadPracticeProblems('hard')">Hard</button>
+                                </div>
+                                
+                                <div id="practice-problems-container" class="mt-4">
+                                    <!-- Practice problems will be loaded here -->
+                                    <div class="text-center">
+                                        <p>Select a difficulty level to load practice problems.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Challenge Tab -->
+                        <div class="tab-pane fade" id="challenge" role="tabpanel" aria-labelledby="challenge-tab">
+                            <div class="challenge-content">
+                                <h2>Statistics & Probability Challenges</h2>
+                                <p>Put your statistics and probability skills to the test with these timed challenges. Complete them to earn badges and level up your character!</p>
+                                
+                                <div class="challenge-cards">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="challenge-card">
+                                                <div class="challenge-card-header">
+                                                    <h3>Data Analysis Challenge</h3>
+                                                    <span class="badge bg-primary">100 XP</span>
+                                                </div>
+                                                <div class="challenge-card-body">
+                                                    <p>Analyze 5 data sets in 5 minutes.</p>
+                                                    <div class="challenge-stats">
+                                                        <div><i class="fas fa-clock"></i> 5 minutes</div>
+                                                        <div><i class="fas fa-star"></i> 5 problems</div>
+                                                    </div>
+                                                </div>
+                                                <div class="challenge-card-footer">
+                                                    <button class="btn btn-primary" onclick="startChallenge('data')">Start Challenge</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-4">
+                                            <div class="challenge-card">
+                                                <div class="challenge-card-header">
+                                                    <h3>Probability Challenge</h3>
+                                                    <span class="badge bg-primary">150 XP</span>
+                                                </div>
+                                                <div class="challenge-card-body">
+                                                    <p>Solve 5 probability problems in 7 minutes.</p>
+                                                    <div class="challenge-stats">
+                                                        <div><i class="fas fa-clock"></i> 7 minutes</div>
+                                                        <div><i class="fas fa-star"></i> 5 problems</div>
+                                                    </div>
+                                                </div>
+                                                <div class="challenge-card-footer">
+                                                    <button class="btn btn-primary" onclick="startChallenge('probability')">Start Challenge</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-4">
+                                            <div class="challenge-card">
+                                                <div class="challenge-card-header">
+                                                    <h3>Counting & Combinations Challenge</h3>
+                                                    <span class="badge bg-primary">200 XP</span>
+                                                </div>
+                                                <div class="challenge-card-body">
+                                                    <p>Solve 5 counting problems in 10 minutes.</p>
+                                                    <div class="challenge-stats">
+                                                        <div><i class="fas fa-clock"></i> 10 minutes</div>
+                                                        <div><i class="fas fa-star"></i> 5 problems</div>
+                                                    </div>
+                                                </div>
+                                                <div class="challenge-card-footer">
+                                                    <button class="btn btn-primary" onclick="startChallenge('counting')">Start Challenge</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="challenge-container" class="mt-4 d-none">
+                                    <!-- Challenge content will be loaded here -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Test Tab -->
+                        <div class="tab-pane fade" id="test" role="tabpanel" aria-labelledby="test-tab">
+                            <div class="test-content">
+                                <h2>Statistics & Probability ACT Test Simulation</h2>
+                                <p>Take a timed test that simulates the statistics and probability questions you'll see on the ACT. This will help you identify your strengths and areas for improvement.</p>
+                                
+                                <div class="test-intro">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <h3>Test Details</h3>
+                                            <ul>
+                                                <li><strong>Time Limit:</strong> 15 minutes</li>
+                                                <li><strong>Questions:</strong> 10 statistics and probability questions in ACT format</li>
+                                                <li><strong>Topics Covered:</strong> Descriptive statistics, data representation, probability, counting principles, and expected value</li>
+                                                <li><strong>Scoring:</strong> Instant results with detailed explanations</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="test-start-card">
+                                                <h3>Ready to Test Your Skills?</h3>
+                                                <p>This simulation will help you prepare for the actual ACT math section.</p>
+                                                <button class="btn btn-primary btn-lg" onclick="startTest()">Start Test</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="test-container" class="mt-4 d-none">
+                                    <!-- Test content will be loaded here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="game-footer">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 ACT Quest: Path to 30+</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>Created for July 2025 ACT Test Prep</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/math-modules.js"></script>
+    <script src="../../js/statistics.js"></script>
+</body>
+</html>

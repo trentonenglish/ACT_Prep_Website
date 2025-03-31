@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT Quest: Progress Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/gamification.css">
+    <link rel="stylesheet" href="../css/progress-tracking.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid game-container">
+        <!-- Header/Navigation -->
+        <header class="game-header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">ACT Quest: Path to 30+</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#math">Math Arena</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#english">English Realm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html#reading">Reading Kingdom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="progress-dashboard.html">Progress Dashboard</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+            <!-- Dashboard Header -->
+            <section class="dashboard-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h1>Your ACT Quest Progress</h1>
+                            <p class="lead">Track your journey to ACT mastery and monitor your improvement</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="predicted-score-widget">
+                                <h3>Predicted ACT Score</h3>
+                                <div class="predicted-score-value" id="predicted-score">26</div>
+                                <div class="predicted-score-label">Based on your current progress</div>
+                                <div class="score-improvement">
+                                    <span>Improvement: </span>
+                                    <span class="improvement-value">+0</span>
+                                    <span> points</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Character Info Section -->
+            <section class="character-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="character-info-panel">
+                                <div id="character-info">
+                                    <!-- Character info will be loaded here by gamification.js -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="xp-level-panel">
+                                <h3>Experience & Level</h3>
+                                <div id="xp-bar">
+                                    <!-- XP bar will be loaded here by gamification.js -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="quest-panel">
+                                <h3>Active Quests</h3>
+                                <div id="active-quests">
+                                    <!-- Active quests will be loaded here by gamification.js -->
+                                </div>
+                                <div class="text-center mt-3">
+                                    <button class="btn btn-primary" id="quest-board-button">Quest Board</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Progress Tracking Section -->
+            <section class="progress-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Module Progress</h2>
+                        <p>Track your completion of ACT prep modules</p>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="progress-card">
+                                <h3>Subject Progress</h3>
+                                <div class="progress-bars">
+                                    <div class="progress-item">
+                                        <div class="progress-label">
+                                            <span>Math</span>
+                                            <span class="progress-percentage">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="progress-item">
+                                        <div class="progress-label">
+                                            <span>English</span>
+                                            <span class="progress-percentage">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="progress-item">
+                                        <div class="progress-label">
+                                            <span>Reading</span>
+                                            <span class="progress-percentage">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="progress-item">
+                                        <div class="progress-label">
+                                            <span>Overall</span>
+                                            <span class="progress-percentage">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="study-time-stats" class="study-time-stats">
+                                    <!-- Study time stats will be loaded here by progress-tracking.js -->
+                                    <div class="study-time-item">
+                                        <div class="study-time-label">Total Study Time</div>
+                                        <div class="study-time-value">0 hours</div>
+                                    </div>
+                                    <div class="study-time-item">
+                                        <div class="study-time-label">Math</div>
+                                        <div class="study-time-value">0 hours</div>
+                                    </div>
+                                    <div class="study-time-item">
+                                        <div class="study-time-label">English</div>
+                                        <div class="study-time-value">0 hours</div>
+                                    </div>
+                                    <div class="study-time-item">
+                                        <div class="study-time-label">Reading</div>
+                                        <div class="study-time-value">0 hours</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="progress-card">
+                                <h3>Module Completion</h3>
+                                <div class="module-completion">
+                                    <h4>Math Modules</h4>
+                                    <div class="module-list">
+                                        <div class="module-item">
+                                            <div class="module-name">Algebra</div>
+                                            <div class="module-status not-started">Not Started</div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="module-name">Functions</div>
+                                            <div class="module-status not-started">Not Started</div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="module-name">Geometry</div>
+                                            <div class="module-status not-started">Not Started</div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="module-name">Statistics & Probability</div>
+                                            <div class="module-status not-started">Not Started</div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="module-name">Number & Quantity</div>
+                                            <div class="module-status not-started">Not Started</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <h4 class="mt-4">English Modules</h4>
+                                    <div class="module-list">
+                                        <div class="module-item">
+                                            <div class="module-name">Grammar & Usage</div>
+                                            <div class="module-status not-started">Not Started</div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="module-name">Rhetorical Skills</div>
+                                            <div class="module-status not-started">Not Started</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <h4 class="mt-4">Reading Modules</h4>
+                                    <div class="module-list">
+                                        <div class="module-item">
+                                            <div class="module-name">Reading Comprehension</div>
+                                            <div class="module-status not-started">Not Started</div>
+                                        </div>
+                                        <div class="module-item">
+                                            <div class="module-name">Passage Types</div>
+                                            <div class="module-status not-started">Not Started</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Test Scores Section -->
+            <section class="test-scores-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Practice Test Scores</h2>
+                        <p>Track your performance on practice tests</p>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="progress-card">
+                                <h3>Latest Test Scores</h3>
+                                <div class="test-scores">
+                                    <div class="test-score-item">
+                                        <div class="test-score-label">Math</div>
+                                        <div class="test-score-value">--</div>
+                                    </div>
+                                    
+                                    <div class="test-score-item">
+                                        <div class="test-score-label">English</div>
+                                        <div class="test-score-value">--</div>
+                                    </div>
+                                    
+                                    <div class="test-score-item">
+                                        <div class="test-score-label">Reading</div>
+                                        <div class="test-score-value">--</div>
+                                    </div>
+                                    
+                                    <div class="test-score-item total-score">
+                                        <div class="test-score-label">Composite</div>
+                                        <div class="test-score-value">--</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-primary" id="take-practice-test-btn">Take Practice Test</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="progress-card">
+                                <h3>Score History</h3>
+                                <div class="score-history">
+                                    <canvas id="score-history-chart"></canvas>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <p>Take practice tests regularly to track your improvement over time.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Strengths and Weaknesses Section -->
+            <section class="strengths-weaknesses-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Strengths & Areas for Improvement</h2>
+                        <p>Based on your practice test performance</p>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="progress-card">
+                                <h3>Your Strengths</h3>
+                                <div id="strengths-list">
+                                    <div class="no-data-message">
+                                        <p>Take practice tests to identify your strengths.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="progress-card">
+                                <h3>Areas for Improvement</h3>
+                                <div id="weaknesses-list">
+                                    <div class="no-data-message">
+                                        <p>Take practice tests to identify areas that need improvement.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recommendations Section -->
+            <section class="recommendations-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Personalized Recommendations</h2>
+                        <p>Based on your progress and test performance</p>
+                    </div>
+                    
+                    <div class="progress-card">
+                        <h3>Recommended Next Steps</h3>
+                        <div id="recommendations-list">
+                            <ul>
+                                <li>Complete the Algebra module in the Math Arena to build a strong foundation.</li>
+                                <li>Take a Math section practice test to identify your starting point.</li>
+                                <li>Spend at least 30 minutes daily on ACT prep to build consistency.</li>
+                                <li>Focus on improving your math skills first, as this was identified as your weakest area.</li>
+                                <li>Create your character and begin quests to track your progress and earn rewards.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Study Plan Section -->
+            <section class="study-plan-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Your Study Plan</h2>
+                        <p>Follow this personalized study plan to reach your target score of 30+ by July 2025</p>
+                    </div>
+                    
+                    <div class="study-plan-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>April 2025</h3>
+                                <ul>
+                                    <li>Complete Math Arena modules (focus on Algebra and Functions)</li>
+                                    <li>Take Math section practice test</li>
+                                    <li>Begin English Realm modules</li>
+                                    <li>Complete at least 3 quests</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>May 2025</h3>
+                                <ul>
+                                    <li>Complete remaining Math Arena modules</li>
+                                    <li>Complete English Realm modules</li>
+                                    <li>Begin Reading Kingdom modules</li>
+                                    <li>Take English and Reading section practice tests</li>
+                                    <li>Complete at least 5 more quests</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>June 2025</h3>
+                                <ul>
+                                    <li>Complete Reading Kingdom modules</li>
+                                    <li>Take full practice tests weekly</li>
+                                    <li>Review weak areas identified in practice tests</li>
+                                    <li>Complete all remaining quests</li>
+                                    <li>Focus on timed practice in all sections</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>July 2025</h3>
+                                <ul>
+                                    <li>Final review of all content areas</li>
+                                    <li>Take final full-length practice test</li>
+                                    <li>Review test-taking strategies</li>
+                                    <li>Relax and prepare mentally for test day</li>
+                                    <li>ACT Test Day: Score 30+!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="game-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>ACT Quest: Path to 30+</h3>
+                        <p>An interactive, gamified ACT prep course designed to help you achieve your target score.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="../index.html#home">Home</a></li>
+                            <li><a href="../index.html#math">Math Arena</a></li>
+                            <li><a href="../index.html#english">English Realm</a></li>
+                            <li><a href="../index.html#reading">Reading Kingdom</a></li>
+                            <li><a href="progress-dashboard.html">Progress Dashboard</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="https://www.act.org" target="_blank">Official ACT Website</a></li>
+                            <li><a href="https://www.act.org/content/act/en/products-and-services/the-act/test-preparation.html" target="_blank">ACT Test Prep</a></li>
+                            <li><a href="https://www.act.org/content/act/en/products-and-services/the-act/registration.html" target="_blank">ACT Registration</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2025 ACT Quest: Path to 30+ | Created for July 2025 ACT Test Prep</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/gamification.js"></script>
+    <script src="../js/progress-tracking.js"></script>
+    <script>
+        // Initialize score history chart
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('score-history-chart').getContext('2d');
+            const scoreHistoryChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Starting', 'Future Tests'],
+                    datasets: [
+                        {
+                            label: 'Math',
+                            data: [26, null],
+                            borderColor: 'rgba(13, 110, 253, 1)',
+                            backgroundColor: 'rgba(13, 110, 253, 0.1)',
+                            tension: 0.1
+                        },
+                        {
+                            label: 'English',
+                            data: [26, null],
+                            borderColor: 'rgba(25, 135, 84, 1)',
+                            backgroundColor: 'rgba(25, 135, 84, 0.1)',
+                            tension: 0.1
+                        },
+                        {
+                            label: 'Reading',
+                            data: [26, null],
+                            borderColor: 'rgba(13, 202, 240, 1)',
+                            backgroundColor: 'rgba(13, 202, 240, 0.1)',
+                            tension: 0.1
+                        },
+                        {
+                            label: 'Composite',
+                            data: [26, null],
+                            borderColor: 'rgba(255, 193, 7, 1)',
+                            backgroundColor: 'rgba(255, 193, 7, 0.1)',
+                            tension: 0.1,
+                            borderWidth: 3
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            min: 1,
+                            max: 36,
+                            title: {
+                                display: true,
+                                text: 'ACT Score'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

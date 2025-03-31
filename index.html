@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT Quest: Path to 30+</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gamification.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid game-container">
+        <!-- Header/Navigation -->
+        <header class="game-header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">ACT Quest: Path to 30+</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#math">Math Arena</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#english">English Realm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#reading">Reading Kingdom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#progress">Your Journey</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="hero-section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h1 class="animate__animated animate__fadeInUp">Begin Your ACT Quest</h1>
+                            <p class="lead animate__animated animate__fadeInUp animate__delay-1s">Embark on an epic journey to conquer the ACT and achieve a score of 30+</p>
+                            <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-2s">
+                                <button class="btn btn-primary btn-lg" id="start-journey-btn">Start Your Journey</button>
+                                <button class="btn btn-outline-secondary btn-lg" id="character-sheet-button">Character Sheet</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="hero-image animate__animated animate__fadeIn animate__delay-1s">
+                                <img src="images/hero-image.png" alt="ACT Quest Hero" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Character Info Section -->
+            <section class="character-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="character-info-panel">
+                                <div id="character-info">
+                                    <!-- Character info will be loaded here by gamification.js -->
+                                    <div class="text-center">
+                                        <p>Create your character to begin your journey!</p>
+                                        <button class="btn btn-primary" id="create-character-btn">Create Character</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="xp-level-panel">
+                                <h3>Experience & Level</h3>
+                                <div id="xp-bar">
+                                    <!-- XP bar will be loaded here by gamification.js -->
+                                    <div class="xp-bar-container">
+                                        <div class="xp-bar-fill" style="width: 0%"></div>
+                                        <span class="xp-text">0 / 100 XP</span>
+                                    </div>
+                                    <div class="level-indicator">Level 1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="quest-panel">
+                                <h3>Active Quests</h3>
+                                <div id="active-quests">
+                                    <!-- Active quests will be loaded here by gamification.js -->
+                                    <p>No active quests. Start your journey to receive quests!</p>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <button class="btn btn-primary" id="quest-board-button">Quest Board</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Math Section -->
+            <section id="math" class="content-section math-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Math Arena</h2>
+                        <p>Master the mathematical skills needed to conquer the ACT</p>
+                    </div>
+                    
+                    <div class="module-cards">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="module-card">
+                                    <div class="module-card-header">
+                                        <h3>Algebra</h3>
+                                        <div class="pokemon-badge" data-type="psychic"></div>
+                                    </div>
+                                    <div class="module-card-body">
+                                        <p>Master linear equations, quadratic equations, systems of equations, and more.</p>
+                                        <div class="module-stats">
+                                            <div class="stat">
+                                                <i class="fas fa-star"></i>
+                                                <span>12-15% of ACT Math</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-clock"></i>
+                                                <span>Est. time: 3 hours</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module-card-footer">
+                                        <a href="modules/math/algebra.html" class="btn btn-primary">Start Module</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="module-card">
+                                    <div class="module-card-header">
+                                        <h3>Functions</h3>
+                                        <div class="pokemon-badge" data-type="electric"></div>
+                                    </div>
+                                    <div class="module-card-body">
+                                        <p>Master function notation, domain and range, transformations, and operations.</p>
+                                        <div class="module-stats">
+                                            <div class="stat">
+                                                <i class="fas fa-star"></i>
+                                                <span>12-15% of ACT Math</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-clock"></i>
+                                                <span>Est. time: 3 hours</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module-card-footer">
+                                        <a href="modules/math/functions.html" class="btn btn-primary">Start Module</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="module-card">
+                                    <div class="module-card-header">
+                                        <h3>Geometry</h3>
+                                        <div class="pokemon-badge" data-type="rock"></div>
+                                    </div>
+                                    <div class="module-card-body">
+                                        <p>Master angles, triangles, circles, coordinate geometry, and more.</p>
+                                        <div class="module-stats">
+                                            <div class="stat">
+                                                <i class="fas fa-star"></i>
+                                                <span>12-15% of ACT Math</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-clock"></i>
+                                                <span>Est. time: 3 hours</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module-card-footer">
+                                        <a href="modules/math/geometry.html" class="btn btn-primary">Start Module</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-4">
+                            <div class="col-md-4">
+                                <div class="module-card">
+                                    <div class="module-card-header">
+                                        <h3>Statistics & Probability</h3>
+                                        <div class="pokemon-badge" data-type="water"></div>
+                                    </div>
+                                    <div class="module-card-body">
+                                        <p>Master data analysis, probability, and statistical concepts.</p>
+                                        <div class="module-stats">
+                                            <div class="stat">
+                                                <i class="fas fa-star"></i>
+                                                <span>8-12% of ACT Math</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-clock"></i>
+                                                <span>Est. time: 2.5 hours</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module-card-footer">
+                                        <a href="modules/math/statistics.html" class="btn btn-primary">Start Module</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="module-card">
+                                    <div class="module-card-header">
+                                        <h3>Number & Quantity</h3>
+                                        <div class="pokemon-badge" data-type="normal"></div>
+                                    </div>
+                                    <div class="module-card-body">
+                                        <p>Master number properties, exponents, roots, and complex numbers.</p>
+                                        <div class="module-stats">
+                                            <div class="stat">
+                                                <i class="fas fa-star"></i>
+                                                <span>7-10% of ACT Math</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-clock"></i>
+                                                <span>Est. time: 2 hours</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module-card-footer">
+                                        <a href="modules/math/number.html" class="btn btn-primary">Start Module</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="module-card">
+                                    <div class="module-card-header">
+                                        <h3>Math Challenge Arena</h3>
+                                        <div class="dnd-dice" data-number="20"></div>
+                                    </div>
+                                    <div class="module-card-body">
+                                        <p>Test your skills with timed challenges and earn special rewards!</p>
+                                        <div class="module-stats">
+                                            <div class="stat">
+                                                <i class="fas fa-trophy"></i>
+                                                <span>Earn up to 500 XP</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-clock"></i>
+                                                <span>Multiple challenges</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module-card-footer">
+                                        <a href="modules/math/challenge.html" class="btn btn-primary">Enter Arena</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- English Section -->
+            <section id="english" class="content-section english-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>English Realm</h2>
+                        <p>Master grammar, punctuation, and rhetorical skills to excel in the ACT English section</p>
+                    </div>
+                    
+                    <div class="module-cards">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="module-card">
+                                    <div class="module-card-header">
+                                        <h3>Grammar & Usage</h3>
+                                        <div class="pokemon-badge" data-type="fairy"></div>
+                                    </div>
+                                    <div class="module-card-body">
+                                        <p>Master punctuation, grammar rules, and sentence structure.</p>
+                                        <div class="module-stats">
+                                            <div class="stat">
+                                                <i class="fas fa-star"></i>
+                                                <span>55-60% of ACT English</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-clock"></i>
+                                                <span>Est. time: 3 hours</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module-card-footer">
+                                        <a href="modules/english/grammar.html" class="btn btn-primary">Start Module</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="module-card">
+                                    <div class="module-card-header">
+                                        <h3>Rhetorical Skills</h3>
+                                        <div class="pokemon-badge" data-type="dark"></div>
+                                    </div>
+                                    <div class="module-card-body">
+                                        <p>Master organization, style, and purpose in writing.</p>
+                                        <div class="module-stats">
+                                            <div class="stat">
+                                                <i class="fas fa-star"></i>
+                                                <span>40-45% of ACT English</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-clock"></i>
+                                                <span>Est. time: 2.5 hours</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module-card-footer">
+                                        <a href="modules/english/rhetorical.html" class="btn btn-primary">Start Module</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="module-card">
+                                    <div class="module-card-header">
+                                        <h3>English Challenge Arena</h3>
+                                        <div class="dnd-dice" data-number="12"></div>
+                                    </div>
+                                    <div class="module-card-body">
+                                        <p>Test your skills with timed challenges and earn special rewards!</p>
+                                        <div class="module-stats">
+                                            <div class="stat">
+                                                <i class="fas fa-trophy"></i>
+                                                <span>Earn up to 500 XP</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-clock"></i>
+                                                <span>Multiple challenges</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module-card-footer">
+                                        <a href="modules/english/challenge.html" class="btn btn-primary">Enter Arena</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reading Section -->
+            <section id="reading" class="content-section reading-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Reading Kingdom</h2>
+                        <p>Master reading comprehension strategies to excel in the ACT Reading section</p>
+                    </div>
+                    
+                    <div class="module-cards">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="module-card">
+                                    <div class="module-card-header">
+                                        <h3>Reading Comprehension</h3>
+                                        <div class="pokemon-badge" data-type="ghost"></div>
+                                    </div>
+                                    <div class="module-card-body">
+                                        <p>Master strategies for understanding and analyzing complex texts.</p>
+                                        <div class="module-stats">
+                                            <div class="stat">
+                                                <i class="fas fa-star"></i>
+                                                <span>Essential for ACT Reading</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-clock"></i>
+                                                <span>Est. time: 3 hours</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module-card-footer">
+                                        <a href="modules/reading/comprehension.html" class="btn btn-primary">Start Module</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="module-card">
+                                    <div class="module-card-header">
+                                        <h3>Passage Types</h3>
+                                        <div class="pokemon-badge" data-type="grass"></div>
+                                    </div>
+                                    <div class="module-card-body">
+                                        <p>Master strategies for literary narrative, social science, humanities, and natural science passages.</p>
+                                        <div class="module-stats">
+                                            <div class="stat">
+                                                <i class="fas fa-star"></i>
+                                                <span>Covers all ACT passage types</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-clock"></i>
+                                                <span>Est. time: 3 hours</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module-card-footer">
+                                        <a href="modules/reading/passages.html" class="btn btn-primary">Start Module</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="module-card">
+                                    <div class="module-card-header">
+                                        <h3>Reading Challenge Arena</h3>
+                                        <div class="dnd-dice" data-number="8"></div>
+                                    </div>
+                                    <div class="module-card-body">
+                                        <p>Test your skills with timed challenges and earn special rewards!</p>
+                                        <div class="module-stats">
+                                            <div class="stat">
+                                                <i class="fas fa-trophy"></i>
+                                                <span>Earn up to 500 XP</span>
+                                            </div>
+                                            <div class="stat">
+                                                <i class="fas fa-clock"></i>
+                                                <span>Multiple challenges</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module-card-footer">
+                                        <a href="modules/reading/challenge.html" class="btn btn-primary">Enter Arena</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Progress Section -->
+            <section id="progress" class="content-section progress-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Your Journey</h2>
+                        <p>Track your progress and achievements on your quest to ACT mastery</p>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="progress-card">
+                                <h3>Module Progress</h3>
+                                <div class="progress-bars">
+                                    <div class="progress-item">
+                                        <div class="progress-label">
+                                            <span>Math</span>
+                                            <span class="progress-percentage">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="progress-item">
+                                        <div class="progress-label">
+                                            <span>English</span>
+                                            <span class="progress-percentage">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="progress-item">
+                                        <div class="progress-label">
+                                            <span>Reading</span>
+                                            <span class="progress-percentage">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="progress-item">
+                                        <div class="progress-label">
+                                            <span>Overall</span>
+                                            <span class="progress-percentage">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="progress-card mt-4">
+                                <h3>Practice Test Scores</h3>
+                                <div class="test-scores">
+                                    <div class="test-score-item">
+                                        <div class="test-score-label">Math</div>
+                                        <div class="test-score-value">--</div>
+                                    </div>
+                                    
+                                    <div class="test-score-item">
+                                        <div class="test-score-label">English</div>
+                                        <div class="test-score-value">--</div>
+                                    </div>
+                                    
+                                    <div class="test-score-item">
+                                        <div class="test-score-label">Reading</div>
+                                        <div class="test-score-value">--</div>
+                                    </div>
+                                    
+                                    <div class="test-score-item total-score">
+                                        <div class="test-score-label">Composite</div>
+                                        <div class="test-score-value">--</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="text-center mt-3">
+                                    <button class="btn btn-primary" id="take-practice-test-btn">Take Full Practice Test</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="achievements-card">
+                                <h3>Achievements</h3>
+                                <div id="achievements-list">
+                                    <!-- Achievements will be loaded here by gamification.js -->
+                                    <p>No achievements yet. Complete modules and challenges to earn badges!</p>
+                                </div>
+                                
+                                <div class="text-center mt-3">
+                                    <button class="btn btn-primary" id="achievements-button">View All Achievements</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Study Plan Section -->
+            <section class="study-plan-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Your Study Plan</h2>
+                        <p>Follow this personalized study plan to reach your target score of 30+ by July 2025</p>
+                    </div>
+                    
+                    <div class="study-plan-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>April 2025</h3>
+                                <ul>
+                                    <li>Complete Math Arena modules (focus on Algebra and Functions)</li>
+                                    <li>Take Math section practice test</li>
+                                    <li>Begin English Realm modules</li>
+                                    <li>Complete at least 3 quests</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>May 2025</h3>
+                                <ul>
+                                    <li>Complete remaining Math Arena modules</li>
+                                    <li>Complete English Realm modules</li>
+                                    <li>Begin Reading Kingdom modules</li>
+                                    <li>Take English and Reading section practice tests</li>
+                                    <li>Complete at least 5 more quests</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>June 2025</h3>
+                                <ul>
+                                    <li>Complete Reading Kingdom modules</li>
+                                    <li>Take full practice tests weekly</li>
+                                    <li>Review weak areas identified in practice tests</li>
+                                    <li>Complete all remaining quests</li>
+                                    <li>Focus on timed practice in all sections</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>July 2025</h3>
+                                <ul>
+                                    <li>Final review of all content areas</li>
+                                    <li>Take final full-length practice test</li>
+                                    <li>Review test-taking strategies</li>
+                                    <li>Relax and prepare mentally for test day</li>
+                                    <li>ACT Test Day: Score 30+!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="game-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>ACT Quest: Path to 30+</h3>
+                        <p>An interactive, gamified ACT prep course designed to help you achieve your target score.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#math">Math Arena</a></li>
+                            <li><a href="#english">English Realm</a></li>
+                            <li><a href="#reading">Reading Kingdom</a></li>
+                            <li><a href="#progress">Your Journey</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Resources</h4>
+                        <ul class="footer-links">
+                            <li><a href="https://www.act.org" target="_blank">Official ACT Website</a></li>
+                            <li><a href="https://www.act.org/content/act/en/products-and-services/the-act/test-preparation.html" target="_blank">ACT Test Prep</a></li>
+                            <li><a href="https://www.act.org/content/act/en/products-and-services/the-act/registration.html" target="_blank">ACT Registration</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2025 ACT Quest: Path to 30+ | Created for July 2025 ACT Test Prep</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gamification.js"></script>
+</body>
+</html>

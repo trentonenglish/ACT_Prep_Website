@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number & Quantity | ACT Quest</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/math-modules.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container-fluid game-container">
+        <!-- Header/Navigation -->
+        <header class="game-header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../../index.html">ACT Quest: Path to 30+</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../../index.html#math">Math Arena</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#english">English Realm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#reading">Reading Kingdom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#progress">Your Journey</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+            <!-- Module Header -->
+            <section class="module-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h1>Number & Quantity</h1>
+                            <p class="lead">Master numbers, operations, and quantities to boost your ACT Math score!</p>
+                            <div class="module-progress">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="module-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module Navigation -->
+            <section class="module-navigation">
+                <div class="container">
+                    <ul class="nav nav-pills nav-fill" id="moduleTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="learn-tab" data-bs-toggle="tab" data-bs-target="#learn" type="button" role="tab">Learn</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="practice-tab" data-bs-toggle="tab" data-bs-target="#practice" type="button" role="tab">Practice</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="challenge-tab" data-bs-toggle="tab" data-bs-target="#challenge" type="button" role="tab">Challenge</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="test-tab" data-bs-toggle="tab" data-bs-target="#test" type="button" role="tab">Test</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Module Content -->
+            <section class="module-content">
+                <div class="container">
+                    <div class="tab-content" id="moduleTabContent">
+                        <!-- Learn Tab -->
+                        <div class="tab-pane fade show active" id="learn" role="tabpanel" aria-labelledby="learn-tab">
+                            <div class="learn-content">
+                                <h2>Number & Quantity Fundamentals</h2>
+                                
+                                <div class="learn-section">
+                                    <h3>Number Systems</h3>
+                                    <p>Understanding different number systems is essential for the ACT Math section.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Types of Numbers</h4>
+                                        <ul>
+                                            <li><strong>Natural Numbers:</strong> Positive integers (1, 2, 3, ...)</li>
+                                            <li><strong>Whole Numbers:</strong> Natural numbers and zero (0, 1, 2, 3, ...)</li>
+                                            <li><strong>Integers:</strong> Whole numbers and their negatives (..., -3, -2, -1, 0, 1, 2, 3, ...)</li>
+                                            <li><strong>Rational Numbers:</strong> Numbers that can be expressed as a fraction p/q where p and q are integers and q ≠ 0</li>
+                                            <li><strong>Irrational Numbers:</strong> Numbers that cannot be expressed as a fraction (e.g., π, √2)</li>
+                                            <li><strong>Real Numbers:</strong> All rational and irrational numbers</li>
+                                            <li><strong>Complex Numbers:</strong> Numbers in the form a + bi, where a and b are real numbers and i is the imaginary unit (i² = -1)</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>Classify the following numbers: -7, 0, 3.14, √9, 2/3, √2</p>
+                                        <div class="solution-steps">
+                                            <p><strong>-7:</strong> Integer, Rational, Real</p>
+                                            <p><strong>0:</strong> Whole Number, Integer, Rational, Real</p>
+                                            <p><strong>3.14:</strong> Rational (can be written as 314/100), Real</p>
+                                            <p><strong>√9 = 3:</strong> Natural, Whole, Integer, Rational, Real</p>
+                                            <p><strong>2/3:</strong> Rational, Real</p>
+                                            <p><strong>√2:</strong> Irrational, Real</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Properties of Real Numbers</h3>
+                                    <p>Understanding the properties of real numbers helps solve equations and simplify expressions.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Number Properties</h4>
+                                        <ul>
+                                            <li><strong>Commutative Property:</strong>
+                                                <ul>
+                                                    <li>Addition: a + b = b + a</li>
+                                                    <li>Multiplication: a × b = b × a</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Associative Property:</strong>
+                                                <ul>
+                                                    <li>Addition: (a + b) + c = a + (b + c)</li>
+                                                    <li>Multiplication: (a × b) × c = a × (b × c)</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Distributive Property:</strong> a × (b + c) = a × b + a × c</li>
+                                            <li><strong>Identity Property:</strong>
+                                                <ul>
+                                                    <li>Addition: a + 0 = a</li>
+                                                    <li>Multiplication: a × 1 = a</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Inverse Property:</strong>
+                                                <ul>
+                                                    <li>Addition: a + (-a) = 0</li>
+                                                    <li>Multiplication: a × (1/a) = 1 (for a ≠ 0)</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>Simplify the expression: 3(x + 2) - 2(x - 1)</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Use the distributive property.</p>
+                                            <div class="math-formula">
+                                                \begin{align}
+                                                3(x + 2) - 2(x - 1) &= 3x + 6 - 2x + 2\\
+                                                &= 3x - 2x + 6 + 2\\
+                                                &= x + 8
+                                                \end{align}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Exponents and Radicals</h3>
+                                    <p>Exponents and radicals are common in the ACT Math section.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Exponent Rules</h4>
+                                        <ul>
+                                            <li><strong>Product Rule:</strong> x^a × x^b = x^(a+b)</li>
+                                            <li><strong>Quotient Rule:</strong> x^a ÷ x^b = x^(a-b)</li>
+                                            <li><strong>Power Rule:</strong> (x^a)^b = x^(a×b)</li>
+                                            <li><strong>Negative Exponents:</strong> x^(-a) = 1/(x^a)</li>
+                                            <li><strong>Zero Exponent:</strong> x^0 = 1 (for x ≠ 0)</li>
+                                            <li><strong>Fractional Exponents:</strong> x^(a/b) = (x^a)^(1/b) = (x^(1/b))^a = b√(x^a)</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>Simplify the expression: (2^3 × 2^2) ÷ 2^4</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Use the product rule for the numerator.</p>
+                                            <div class="math-formula">
+                                                \begin{align}
+                                                2^3 \times 2^2 &= 2^{3+2}\\
+                                                &= 2^5
+                                                \end{align}
+                                            </div>
+                                            
+                                            <p><strong>Step 2:</strong> Use the quotient rule.</p>
+                                            <div class="math-formula">
+                                                \begin{align}
+                                                \frac{2^5}{2^4} &= 2^{5-4}\\
+                                                &= 2^1\\
+                                                &= 2
+                                                \end{align}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Radical Rules</h4>
+                                        <ul>
+                                            <li><strong>Product Rule:</strong> √(a × b) = √a × √b</li>
+                                            <li><strong>Quotient Rule:</strong> √(a ÷ b) = √a ÷ √b</li>
+                                            <li><strong>Power Rule:</strong> √(a^n) = (√a)^n</li>
+                                            <li><strong>Rationalizing the Denominator:</strong> Multiply by a form of 1 to eliminate radicals in the denominator</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>Simplify the expression: √12 + √27</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Express each radical in simplest form.</p>
+                                            <div class="math-formula">
+                                                \begin{align}
+                                                \sqrt{12} &= \sqrt{4 \times 3}\\
+                                                &= \sqrt{4} \times \sqrt{3}\\
+                                                &= 2\sqrt{3}
+                                                \end{align}
+                                            </div>
+                                            
+                                            <div class="math-formula">
+                                                \begin{align}
+                                                \sqrt{27} &= \sqrt{9 \times 3}\\
+                                                &= \sqrt{9} \times \sqrt{3}\\
+                                                &= 3\sqrt{3}
+                                                \end{align}
+                                            </div>
+                                            
+                                            <p><strong>Step 2:</strong> Add the like terms.</p>
+                                            <div class="math-formula">
+                                                \begin{align}
+                                                \sqrt{12} + \sqrt{27} &= 2\sqrt{3} + 3\sqrt{3}\\
+                                                &= 5\sqrt{3}
+                                                \end{align}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Complex Numbers</h3>
+                                    <p>Complex numbers may appear in the ACT Math section, especially in questions involving quadratic equations.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Complex Number Operations</h4>
+                                        <ul>
+                                            <li><strong>Definition:</strong> a + bi, where a is the real part, b is the imaginary part, and i is the imaginary unit (i² = -1)</li>
+                                            <li><strong>Addition/Subtraction:</strong> (a + bi) ± (c + di) = (a ± c) + (b ± d)i</li>
+                                            <li><strong>Multiplication:</strong> (a + bi)(c + di) = ac + adi + bci + bdi² = (ac - bd) + (ad + bc)i</li>
+                                            <li><strong>Division:</strong> $\frac{a + bi}{c + di} = \frac{(a + bi)(c - di)}{(c + di)(c - di)} = \frac{ac + bd}{c^2 + d^2} + \frac{bc - ad}{c^2 + d^2}i$</li>
+                                            <li><strong>Complex Conjugate:</strong> The complex conjugate of a + bi is a - bi</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>Simplify the expression: (3 + 2i) + (4 - 5i)</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Add the real parts and the imaginary parts separately.</p>
+                                            <div class="math-formula">
+                                                \begin{align}
+                                                (3 + 2i) + (4 - 5i) &= (3 + 4) + (2 - 5)i\\
+                                                &= 7 - 3i
+                                                \end{align}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Ratios, Proportions, and Percentages</h3>
+                                    <p>Ratios, proportions, and percentages are frequently tested on the ACT.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Ratio and Proportion</h4>
+                                        <ul>
+                                            <li><strong>Ratio:</strong> A comparison of two quantities, written as a:b or a/b</li>
+                                            <li><strong>Proportion:</strong> An equation stating that two ratios are equal, written as a/b = c/d</li>
+                                            <li><strong>Cross Multiplication:</strong> If a/b = c/d, then ad = bc</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>If 3 gallons of paint cover 750 square feet, how many gallons are needed to cover 2000 square feet?</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Set up a proportion.</p>
+                                            <div class="math-formula">
+                                                \frac{3 \text{ gallons}}{750 \text{ sq ft}} = \frac{x \text{ gallons}}{2000 \text{ sq ft}}
+                                            </div>
+                                            
+                                            <p><strong>Step 2:</strong> Cross multiply and solve for x.</p>
+                                            <div class="math-formula">
+                                                \begin{align}
+                                                3 \times 2000 &= 750 \times x\\
+                                                6000 &= 750x\\
+                                                x &= \frac{6000}{750}\\
+                                                x &= 8
+                                                \end{align}
+                                            </div>
+                                            
+                                            <p>Therefore, 8 gallons of paint are needed to cover 2000 square feet.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Percentages</h4>
+                                        <ul>
+                                            <li><strong>Percentage:</strong> A ratio expressed as a fraction of 100</li>
+                                            <li><strong>Converting to Decimal:</strong> Divide by 100 (move decimal point two places left)</li>
+                                            <li><strong>Converting to Fraction:</strong> Express as a fraction with denominator 100, then simplify</li>
+                                            <li><strong>Percentage Change:</strong> $\text{Percentage Change} = \frac{\text{New Value} - \text{Original Value}}{\text{Original Value}} \times 100\%$</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>A shirt originally priced at $40 is on sale for $30. What is the percentage discount?</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Calculate the amount of discount.</p>
+                                            <div class="math-formula">
+                                                \text{Discount} = \$40 - \$30 = \$10
+                                            </div>
+                                            
+                                            <p><strong>Step 2:</strong> Calculate the percentage discount.</p>
+                                            <div class="math-formula">
+                                                \begin{align}
+                                                \text{Percentage Discount} &= \frac{\text{Discount}}{\text{Original Price}} \times 100\%\\
+                                                &= \frac{\$10}{\$40} \times 100\%\\
+                                                &= 0.25 \times 100\%\\
+                                                &= 25\%
+                                                \end{align}
+                                            </div>
+                                            
+                                            <p>Therefore, the percentage discount is 25%.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Units and Measurement</h3>
+                                    <p>Understanding units and conversions is important for solving real-world problems on the ACT.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Unit Conversions</h4>
+                                        <ul>
+                                            <li><strong>Length:</strong>
+                                                <ul>
+                                                    <li>1 foot = 12 inches</li>
+                                                    <li>1 yard = 3 feet</li>
+                                                    <li>1 mile = 5280 feet</li>
+                                                    <li>1 meter = 100 centimeters</li>
+                                                    <li>1 kilometer = 1000 meters</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Weight/Mass:</strong>
+                                                <ul>
+                                                    <li>1 pound = 16 ounces</li>
+                                                    <li>1 ton = 2000 pounds</li>
+                                                    <li>1 kilogram = 1000 grams</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Volume:</strong>
+                                                <ul>
+                                                    <li>1 cup = 8 fluid ounces</li>
+                                                    <li>1 pint = 2 cups</li>
+                                                    <li>1 quart = 2 pints</li>
+                                                    <li>1 gallon = 4 quarts</li>
+                                                    <li>1 liter = 1000 milliliters</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Time:</strong>
+                                                <ul>
+                                                    <li>1 minute = 60 seconds</li>
+                                                    <li>1 hour = 60 minutes</li>
+                                                    <li>1 day = 24 hours</li>
+                                                    <li>1 week = 7 days</li>
+                                                    <li>1 year = 365 days (or 366 in a leap year)</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>A car travels at a speed of 65 miles per hour. How many feet does it travel in 10 seconds?</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Convert miles per hour to feet per second.</p>
+                                            <div class="math-formula">
+                                                \begin{align}
+                                                65 \text{ miles per hour} &= 65 \text{ miles} \times \frac{5280 \text{ feet}}{1 \text{ mile}} \times \frac{1 \text{ hour}}{3600 \text{ seconds}}\\
+                                                &= \frac{65 \times 5280}{3600} \text{ feet per second}\\
+                                                &= \frac{343200}{3600} \text{ feet per second}\\
+                                                &= 95.33 \text{ feet per second}
+                                                \end{align}
+                                            </div>
+                                            
+                                            <p><strong>Step 2:</strong> Calculate the distance traveled in 10 seconds.</p>
+                                            <div class="math-formula">
+                                                \begin{align}
+                                                \text{Distance} &= \text{Speed} \times \text{Time}\\
+                                                &= 95.33 \text{ feet per second} \times 10 \text{ seconds}\\
+                                                &= 953.3 \text{ feet}
+                                                \end{align}
+                                            </div>
+                                            
+                                            <p>Therefore, the car travels approximately 953 feet in 10 seconds.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="next-steps">
+                                    <h3>Ready to Practice?</h3>
+                                    <p>Now that you've learned the fundamentals of number and quantity, test your knowledge with practice problems!</p>
+                                    <button class="btn btn-primary" onclick="document.getElementById('practice-tab').click()">Go to Practice</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Practice Tab -->
+                        <div class="tab-pane fade" id="practice" role="tabpanel" aria-labelledby="practice-tab">
+                            <div class="practice-content">
+                                <h2>Practice Problems</h2>
+                                <p>Test your understanding with these practice problems. Select a difficulty level to begin.</p>
+                                
+                                <div class="difficulty-selector">
+                                    <button class="btn btn-success" onclick="loadPracticeProblems('easy')">Easy</button>
+                                    <button class="btn btn-warning" onclick="loadPracticeProblems('medium')">Medium</button>
+                                    <button class="btn btn-danger" onclick="loadPracticeProblems('hard')">Hard</button>
+                                </div>
+                                
+                                <div id="practice-problems-container" class="mt-4">
+                                    <!-- Practice problems will be loaded here -->
+                                    <div class="text-center">
+                                        <p>Select a difficulty level to load practice problems.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Challenge Tab -->
+                        <div class="tab-pane fade" id="challenge" role="tabpanel" aria-labelledby="challenge-tab">
+                            <div class="challenge-content">
+                                <h2>Number & Quantity Challenges</h2>
+                                <p>Put your number and quantity skills to the test with these timed challenges. Complete them to earn badges and level up your character!</p>
+                                
+                                <div class="challenge-cards">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="challenge-card">
+                                                <div class="challenge-card-header">
+                                                    <h3>Exponents & Radicals Challenge</h3>
+                                                    <span class="badge bg-primary">100 XP</span>
+                                                </div>
+                                                <div class="challenge-card-body">
+                                                    <p>Solve 5 exponent and radical problems in 5 minutes.</p>
+                                                    <div class="challenge-stats">
+                                                        <div><i class="fas fa-clock"></i> 5 minutes</div>
+                                                        <div><i class="fas fa-star"></i> 5 problems</div>
+                                                    </div>
+                                                </div>
+                                                <div class="challenge-card-footer">
+                                                    <button class="btn btn-primary" onclick="startChallenge('exponents')">Start Challenge</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-4">
+                                            <div class="challenge-card">
+                                                <div class="challenge-card-header">
+                                                    <h3>Ratios & Percentages Challenge</h3>
+                                                    <span class="badge bg-primary">150 XP</span>
+                                                </div>
+                                                <div class="challenge-card-body">
+                                                    <p>Solve 5 ratio and percentage problems in 7 minutes.</p>
+                                                    <div class="challenge-stats">
+                                                        <div><i class="fas fa-clock"></i> 7 minutes</div>
+                                                        <div><i class="fas fa-star"></i> 5 problems</div>
+                                                    </div>
+                                                </div>
+                                                <div class="challenge-card-footer">
+                                                    <button class="btn btn-primary" onclick="startChallenge('ratios')">Start Challenge</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-4">
+                                            <div class="challenge-card">
+                                                <div class="challenge-card-header">
+                                                    <h3>Complex Numbers Challenge</h3>
+                                                    <span class="badge bg-primary">200 XP</span>
+                                                </div>
+                                                <div class="challenge-card-body">
+                                                    <p>Solve 5 complex number problems in 10 minutes.</p>
+                                                    <div class="challenge-stats">
+                                                        <div><i class="fas fa-clock"></i> 10 minutes</div>
+                                                        <div><i class="fas fa-star"></i> 5 problems</div>
+                                                    </div>
+                                                </div>
+                                                <div class="challenge-card-footer">
+                                                    <button class="btn btn-primary" onclick="startChallenge('complex')">Start Challenge</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="challenge-container" class="mt-4 d-none">
+                                    <!-- Challenge content will be loaded here -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Test Tab -->
+                        <div class="tab-pane fade" id="test" role="tabpanel" aria-labelledby="test-tab">
+                            <div class="test-content">
+                                <h2>Number & Quantity ACT Test Simulation</h2>
+                                <p>Take a timed test that simulates the number and quantity questions you'll see on the ACT. This will help you identify your strengths and areas for improvement.</p>
+                                
+                                <div class="test-intro">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <h3>Test Details</h3>
+                                            <ul>
+                                                <li><strong>Time Limit:</strong> 15 minutes</li>
+                                                <li><strong>Questions:</strong> 10 number and quantity questions in ACT format</li>
+                                                <li><strong>Topics Covered:</strong> Number systems, exponents, radicals, complex numbers, ratios, proportions, and percentages</li>
+                                                <li><strong>Scoring:</strong> Instant results with detailed explanations</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="test-start-card">
+                                                <h3>Ready to Test Your Skills?</h3>
+                                                <p>This simulation will help you prepare for the actual ACT math section.</p>
+                                                <button class="btn btn-primary btn-lg" onclick="startTest()">Start Test</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="test-container" class="mt-4 d-none">
+                                    <!-- Test content will be loaded here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="game-footer">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 ACT Quest: Path to 30+</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>Created for July 2025 ACT Test Prep</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/math-modules.js"></script>
+    <script src="../../js/number.js"></script>
+</body>
+</html>

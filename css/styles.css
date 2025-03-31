@@ -1,0 +1,391 @@
+/* Main Styles for ACT Quest: Path to 30+ */
+
+:root {
+    /* Color scheme based on Pokemon and Steelers themes */
+    --primary-color: #1e88e5;
+    --secondary-color: #ffc107;
+    --accent-color: #ff5722;
+    --dark-color: #212121;
+    --light-color: #f5f5f5;
+    --success-color: #4caf50;
+    --warning-color: #ff9800;
+    --danger-color: #f44336;
+    --steelers-gold: #FFB612;
+    --steelers-black: #101820;
+    --pokemon-red: #FF0000;
+    --pokemon-blue: #3B4CCA;
+    --dnd-red: #A6292E;
+    --dnd-gold: #D0A85C;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+/* Game Container */
+.game-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+.game-header {
+    background-color: var(--steelers-black);
+    color: var(--steelers-gold);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--steelers-gold) !important;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--steelers-gold) !important;
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--pokemon-blue), var(--primary-color));
+    color: white;
+    padding: 5rem 2rem;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 80%;
+}
+
+.hero-buttons .btn {
+    margin-right: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+    background-color: var(--steelers-gold);
+    border-color: var(--steelers-gold);
+    color: var(--steelers-black);
+}
+
+.btn-secondary {
+    background-color: var(--dnd-red);
+    border-color: var(--dnd-red);
+    color: white;
+}
+
+/* Character Section */
+.character-section {
+    padding: 4rem 2rem;
+    background-color: var(--light-color);
+}
+
+.character-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--steelers-black);
+    font-weight: 700;
+}
+
+.character-options, .character-stats {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.character-options h3, .character-stats h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.stat-item {
+    margin-bottom: 1.5rem;
+}
+
+.stat-item span {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.progress {
+    height: 1.2rem;
+    border-radius: 10px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    background-color: var(--pokemon-blue);
+    border-radius: 10px;
+}
+
+/* Module Sections */
+.module-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.module-section h2 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.module-section p {
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.module-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.module-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.module-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.module-card p {
+    margin-bottom: 1.5rem;
+}
+
+.module-card .btn {
+    align-self: center;
+}
+
+/* Math Section Specific */
+.math-section {
+    background-color: #e3f2fd;
+}
+
+.math-section h2 {
+    color: var(--pokemon-blue);
+}
+
+/* English Section Specific */
+.english-section {
+    background-color: #fff8e1;
+}
+
+.english-section h2 {
+    color: var(--dnd-gold);
+}
+
+/* Reading Section Specific */
+.reading-section {
+    background-color: #e8f5e9;
+}
+
+.reading-section h2 {
+    color: var(--success-color);
+}
+
+/* Progress Section */
+.progress-section {
+    padding: 4rem 2rem;
+    background-color: var(--light-color);
+}
+
+.progress-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--steelers-black);
+    font-weight: 700;
+}
+
+.progress-chart, .achievements {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.achievement-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.achievement-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.achievement-list li:last-child {
+    border-bottom: none;
+}
+
+.achievement-list li i {
+    margin-right: 0.75rem;
+    color: var(--steelers-gold);
+}
+
+/* Footer */
+.game-footer {
+    background-color: var(--steelers-black);
+    color: white;
+    padding: 2rem;
+    margin-top: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+    
+    .hero-section p {
+        max-width: 100%;
+    }
+    
+    .hero-buttons .btn {
+        margin: 0.5rem;
+    }
+    
+    .module-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Pokemon-themed elements */
+.pokemon-badge {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--pokemon-red);
+    margin: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.pokemon-badge:hover {
+    transform: rotate(15deg) scale(1.1);
+}
+
+/* D&D-themed elements */
+.dnd-card {
+    border: 2px solid var(--dnd-gold);
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #f9f4e8;
+    position: relative;
+}
+
+.dnd-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/parchment-texture.jpg');
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Steelers-themed elements */
+.steelers-stripe {
+    background: repeating-linear-gradient(
+        45deg,
+        var(--steelers-gold),
+        var(--steelers-gold) 10px,
+        var(--steelers-black) 10px,
+        var(--steelers-black) 20px
+    );
+    height: 10px;
+    width: 100%;
+}
+
+/* Swimming-themed elements */
+.wave-animation {
+    position: relative;
+    overflow: hidden;
+}
+
+.wave-animation::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+    animation: wave 2s infinite linear;
+}
+
+@keyframes wave {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}

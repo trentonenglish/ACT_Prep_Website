@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Challenges | ACT Quest</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/math-modules.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container-fluid game-container">
+        <!-- Header/Navigation -->
+        <header class="game-header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../../index.html">ACT Quest: Path to 30+</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../../index.html#math">Math Arena</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#english">English Realm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#reading">Reading Kingdom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#progress">Your Journey</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+            <!-- Module Header -->
+            <section class="module-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h1>Geometry Challenges</h1>
+                            <p class="lead">Master shapes, angles, and spatial relationships to conquer the ACT Math section!</p>
+                            <div class="module-progress">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="module-icon">
+                                <i class="fas fa-shapes"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module Navigation -->
+            <section class="module-navigation">
+                <div class="container">
+                    <ul class="nav nav-pills nav-fill" id="moduleTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="learn-tab" data-bs-toggle="tab" data-bs-target="#learn" type="button" role="tab">Learn</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="practice-tab" data-bs-toggle="tab" data-bs-target="#practice" type="button" role="tab">Practice</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="challenge-tab" data-bs-toggle="tab" data-bs-target="#challenge" type="button" role="tab">Challenge</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="test-tab" data-bs-toggle="tab" data-bs-target="#test" type="button" role="tab">Test</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Module Content -->
+            <section class="module-content">
+                <div class="container">
+                    <div class="tab-content" id="moduleTabContent">
+                        <!-- Learn Tab -->
+                        <div class="tab-pane fade show active" id="learn" role="tabpanel" aria-labelledby="learn-tab">
+                            <div class="learn-content">
+                                <h2>Geometry Fundamentals</h2>
+                                
+                                <div class="learn-section">
+                                    <h3>Angles and Lines</h3>
+                                    <p>Understanding angles and lines is fundamental to geometry. Here are key concepts that frequently appear on the ACT:</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Angle Relationships</h4>
+                                        <ul>
+                                            <li>Complementary angles: Two angles whose sum is 90° (right angle)</li>
+                                            <li>Supplementary angles: Two angles whose sum is 180° (straight angle)</li>
+                                            <li>Vertical angles: Opposite angles formed by intersecting lines (equal in measure)</li>
+                                            <li>Corresponding angles: Angles in the same relative position when a transversal crosses two lines</li>
+                                            <li>Alternate interior angles: Angles on opposite sides of the transversal and inside the two lines</li>
+                                            <li>Alternate exterior angles: Angles on opposite sides of the transversal and outside the two lines</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>In the figure below, lines L₁ and L₂ are parallel, and they are cut by transversal T. If angle 1 = 65°, find the measures of angles 2, 3, and 4.</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Identify the angle relationships.</p>
+                                            <ul>
+                                                <li>Angle 2 is the alternate interior angle to angle 1</li>
+                                                <li>Angle 3 is the corresponding angle to angle 1</li>
+                                                <li>Angle 4 is the vertical angle to angle 2</li>
+                                            </ul>
+                                            
+                                            <p><strong>Step 2:</strong> Apply the angle relationship properties.</p>
+                                            <ul>
+                                                <li>Since angle 1 = 65° and angle 2 is the alternate interior angle, angle 2 = 65°</li>
+                                                <li>Since angle 1 = 65° and angle 3 is the corresponding angle, angle 3 = 65°</li>
+                                                <li>Since angle 2 = 65° and angle 4 is the vertical angle, angle 4 = 65°</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Triangles</h3>
+                                    <p>Triangles are one of the most common shapes tested on the ACT. Understanding their properties is essential.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Triangle Properties</h4>
+                                        <ul>
+                                            <li>Sum of interior angles = 180°</li>
+                                            <li>Area = (1/2) × base × height</li>
+                                            <li>Pythagorean Theorem (for right triangles): a² + b² = c²</li>
+                                            <li>Special right triangles:
+                                                <ul>
+                                                    <li>30°-60°-90° triangle: If the shortest leg is x, then the hypotenuse is 2x and the other leg is x√3</li>
+                                                    <li>45°-45°-90° triangle: If the legs are each x, then the hypotenuse is x√2</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>A right triangle has one leg of length 8 and a hypotenuse of length 17. Find the length of the other leg.</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Use the Pythagorean Theorem.</p>
+                                            <div class="math-formula">
+                                                \[ a^2 + b^2 = c^2 \]
+                                                \[ 8^2 + b^2 = 17^2 \]
+                                                \[ 64 + b^2 = 289 \]
+                                                \[ b^2 = 225 \]
+                                                \[ b = 15 \]
+                                            </div>
+                                            <p>The length of the other leg is 15 units.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Triangle Congruence and Similarity</h4>
+                                        <p><strong>Congruence Criteria (triangles are identical):</strong></p>
+                                        <ul>
+                                            <li>SSS (Side-Side-Side): All three pairs of corresponding sides are equal</li>
+                                            <li>SAS (Side-Angle-Side): Two pairs of sides and the included angle are equal</li>
+                                            <li>ASA (Angle-Side-Angle): Two pairs of angles and the included side are equal</li>
+                                            <li>AAS (Angle-Angle-Side): Two pairs of angles and a non-included side are equal</li>
+                                        </ul>
+                                        <p><strong>Similarity Criteria (triangles have the same shape but different size):</strong></p>
+                                        <ul>
+                                            <li>AAA (Angle-Angle-Angle): All three pairs of corresponding angles are equal</li>
+                                            <li>SSS (Side-Side-Side): All three pairs of corresponding sides are proportional</li>
+                                            <li>SAS (Side-Angle-Side): Two pairs of sides are proportional and the included angle is equal</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Quadrilaterals</h3>
+                                    <p>Quadrilaterals are four-sided polygons that appear frequently on the ACT.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Quadrilateral Properties</h4>
+                                        <ul>
+                                            <li><strong>Rectangle:</strong>
+                                                <ul>
+                                                    <li>All angles are 90°</li>
+                                                    <li>Opposite sides are parallel and equal</li>
+                                                    <li>Diagonals bisect each other</li>
+                                                    <li>Area = length × width</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Square:</strong>
+                                                <ul>
+                                                    <li>All angles are 90°</li>
+                                                    <li>All sides are equal</li>
+                                                    <li>Diagonals bisect each other at 90°</li>
+                                                    <li>Area = side²</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Parallelogram:</strong>
+                                                <ul>
+                                                    <li>Opposite sides are parallel and equal</li>
+                                                    <li>Opposite angles are equal</li>
+                                                    <li>Diagonals bisect each other</li>
+                                                    <li>Area = base × height</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Rhombus:</strong>
+                                                <ul>
+                                                    <li>All sides are equal</li>
+                                                    <li>Opposite angles are equal</li>
+                                                    <li>Diagonals bisect each other at 90°</li>
+                                                    <li>Area = (1/2) × product of diagonals</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Trapezoid:</strong>
+                                                <ul>
+                                                    <li>Exactly one pair of opposite sides is parallel</li>
+                                                    <li>Area = (1/2) × (sum of parallel sides) × height</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>A parallelogram has a base of 12 cm and a height of 5 cm. What is its area?</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Use the area formula for a parallelogram.</p>
+                                            <div class="math-formula">
+                                                \[ \text{Area} = \text{base} \times \text{height} \]
+                                                \[ \text{Area} = 12 \times 5 \]
+                                                \[ \text{Area} = 60 \]
+                                            </div>
+                                            <p>The area of the parallelogram is 60 square centimeters.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Circles</h3>
+                                    <p>Circles are another important shape tested on the ACT.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Circle Properties</h4>
+                                        <ul>
+                                            <li>Circumference = 2πr (where r is the radius)</li>
+                                            <li>Area = πr²</li>
+                                            <li>Central angle (in degrees) = (arc length / circumference) × 360°</li>
+                                            <li>Arc length = (central angle / 360°) × circumference</li>
+                                            <li>Sector area = (central angle / 360°) × circle area</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>A circle has a radius of 6 cm. Find its circumference and area.</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Calculate the circumference.</p>
+                                            <div class="math-formula">
+                                                \[ \text{Circumference} = 2\pi r \]
+                                                \[ \text{Circumference} = 2\pi \times 6 \]
+                                                \[ \text{Circumference} = 12\pi \]
+                                            </div>
+                                            
+                                            <p><strong>Step 2:</strong> Calculate the area.</p>
+                                            <div class="math-formula">
+                                                \[ \text{Area} = \pi r^2 \]
+                                                \[ \text{Area} = \pi \times 6^2 \]
+                                                \[ \text{Area} = 36\pi \]
+                                            </div>
+                                            
+                                            <p>The circumference is 12π cm (approximately 37.7 cm) and the area is 36π cm² (approximately 113.1 cm²).</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Angles in Circles</h4>
+                                        <ul>
+                                            <li>Inscribed angle = (1/2) × central angle that subtends the same arc</li>
+                                            <li>Angle in a semicircle = 90°</li>
+                                            <li>Angles in the same segment are equal</li>
+                                            <li>Angle between a tangent and a radius = 90°</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Coordinate Geometry</h3>
+                                    <p>Coordinate geometry combines algebra and geometry by using coordinates to describe geometric shapes.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Distance and Midpoint Formulas</h4>
+                                        <ul>
+                                            <li>Distance between points (x₁, y₁) and (x₂, y₂): d = √[(x₂ - x₁)² + (y₂ - y₁)²]</li>
+                                            <li>Midpoint between points (x₁, y₁) and (x₂, y₂): M = ((x₁ + x₂)/2, (y₁ + y₂)/2)</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>Find the distance between the points (3, 4) and (7, 9).</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Use the distance formula.</p>
+                                            <div class="math-formula">
+                                                \[ d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \]
+                                                \[ d = \sqrt{(7 - 3)^2 + (9 - 4)^2} \]
+                                                \[ d = \sqrt{16 + 25} \]
+                                                \[ d = \sqrt{41} \]
+                                            </div>
+                                            <p>The distance between the points is √41 units (approximately 6.4 units).</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Slope and Equations of Lines</h4>
+                                        <ul>
+                                            <li>Slope between points (x₁, y₁) and (x₂, y₂): m = (y₂ - y₁)/(x₂ - x₁)</li>
+                                            <li>Point-slope form: y - y₁ = m(x - x₁)</li>
+                                            <li>Slope-intercept form: y = mx + b</li>
+                                            <li>Parallel lines have the same slope</li>
+                                            <li>Perpendicular lines have slopes that are negative reciprocals of each other (product = -1)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>3D Geometry</h3>
+                                    <p>Three-dimensional geometry involves shapes with volume, such as prisms, cylinders, pyramids, cones, and spheres.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Volume and Surface Area Formulas</h4>
+                                        <ul>
+                                            <li><strong>Rectangular Prism:</strong>
+                                                <ul>
+                                                    <li>Volume = length × width × height</li>
+                                                    <li>Surface Area = 2(length × width + length × height + width × height)</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Cylinder:</strong>
+                                                <ul>
+                                                    <li>Volume = πr²h</li>
+                                                    <li>Surface Area = 2πr² + 2πrh</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Sphere:</strong>
+                                                <ul>
+                                                    <li>Volume = (4/3)πr³</li>
+                                                    <li>Surface Area = 4πr²</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Cone:</strong>
+                                                <ul>
+                                                    <li>Volume = (1/3)πr²h</li>
+                                                    <li>Surface Area = πr² + πrl (where l is the slant height)</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>A cylindrical tank has a radius of 3 meters and a height of 8 meters. Find its volume and surface area.</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Calculate the volume.</p>
+                                            <div class="math-formula">
+                                                \[ \text{Volume} = \pi r^2 h \]
+                                                \[ \text{Volume} = \pi \times 3^2 \times 8 \]
+                                                \[ \text{Volume} = \pi \times 9 \times 8 \]
+                                                \[ \text{Volume} = 72\pi \]
+                                            </div>
+                                            
+                                            <p><strong>Step 2:</strong> Calculate the surface area.</p>
+                                            <div class="math-formula">
+                                                \[ \text{Surface Area} = 2\pi r^2 + 2\pi r h \]
+                                                \[ \text{Surface Area} = 2\pi \times 3^2 + 2\pi \times 3 \times 8 \]
+                                                \[ \text{Surface Area} = 2\pi \times 9 + 2\pi \times 24 \]
+                                                \[ \text{Surface Area} = 18\pi + 48\pi \]
+                                                \[ \text{Surface Area} = 66\pi \]
+                                            </div>
+                                            
+                                            <p>The volume is 72π m³ (approximately 226.2 m³) and the surface area is 66π m² (approximately 207.3 m²).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="next-steps">
+                                    <h3>Ready to Practice?</h3>
+                                    <p>Now that you've learned the fundamentals of geometry, test your knowledge with practice problems!</p>
+                                    <button class="btn btn-primary" onclick="document.getElementById('practice-tab').click()">Go to Practice</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Practice Tab -->
+                        <div class="tab-pane fade" id="practice" role="tabpanel" aria-labelledby="practice-tab">
+                            <div class="practice-content">
+                                <h2>Practice Problems</h2>
+                                <p>Test your understanding with these practice problems. Select a difficulty level to begin.</p>
+                                
+                                <div class="difficulty-selector">
+                                    <button class="btn btn-success" onclick="loadPracticeProblems('easy')">Easy</button>
+                                    <button class="btn btn-warning" onclick="loadPracticeProblems('medium')">Medium</button>
+                                    <button class="btn btn-danger" onclick="loadPracticeProblems('hard')">Hard</button>
+                                </div>
+                                
+                                <div id="practice-problems-container" class="mt-4">
+                                    <!-- Practice problems will be loaded here -->
+                                    <div class="text-center">
+                                        <p>Select a difficulty level to load practice problems.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Challenge Tab -->
+                        <div class="tab-pane fade" id="challenge" role="tabpanel" aria-labelledby="challenge-tab">
+                            <div class="challenge-content">
+                                <h2>Geometry Challenge</h2>
+                                <p>Put your geometry skills to the test with these timed challenges. Complete them to earn badges and level up your character!</p>
+                                
+                                <div class="challenge-cards">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="challenge-card">
+                                                <div class="challenge-card-header">
+                                                    <h3>Triangle Challenge</h3>
+                                                    <span class="badge bg-primary">100 XP</span>
+                                                </div>
+                                                <div class="challenge-card-body">
+                                                    <p>Solve 5 triangle problems in 5 minutes.</p>
+                                                    <div class="challenge-stats">
+                                                        <div><i class="fas fa-clock"></i> 5 minutes</div>
+                                                        <div><i class="fas fa-star"></i> 5 problems</div>
+                                                    </div>
+                                                </div>
+                                                <div class="challenge-card-footer">
+                                                    <button class="btn btn-primary" onclick="startChallenge('triangles')">Start Challenge</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-4">
+                                            <div class="challenge-card">
+                                                <div class="challenge-card-header">
+                                                    <h3>Circle Challenge</h3>
+                                                    <span class="badge bg-primary">150 XP</span>
+                                                </div>
+                                                <div class="challenge-card-body">
+                                                    <p>Solve 5 circle problems in 7 minutes.</p>
+                                                    <div class="challenge-stats">
+                                                        <div><i class="fas fa-clock"></i> 7 minutes</div>
+                                                        <div><i class="fas fa-star"></i> 5 problems</div>
+                                                    </div>
+                                                </div>
+                                                <div class="challenge-card-footer">
+                                                    <button class="btn btn-primary" onclick="startChallenge('circles')">Start Challenge</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-4">
+                                            <div class="challenge-card">
+                                                <div class="challenge-card-header">
+                                                    <h3>3D Geometry Challenge</h3>
+                                                    <span class="badge bg-primary">200 XP</span>
+                                                </div>
+                                                <div class="challenge-card-body">
+                                                    <p>Solve 5 3D geometry problems in 10 minutes.</p>
+                                                    <div class="challenge-stats">
+                                                        <div><i class="fas fa-clock"></i> 10 minutes</div>
+                                                        <div><i class="fas fa-star"></i> 5 problems</div>
+                                                    </div>
+                                                </div>
+                                                <div class="challenge-card-footer">
+                                                    <button class="btn btn-primary" onclick="startChallenge('3d')">Start Challenge</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="challenge-container" class="mt-4 d-none">
+                                    <!-- Challenge content will be loaded here -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Test Tab -->
+                        <div class="tab-pane fade" id="test" role="tabpanel" aria-labelledby="test-tab">
+                            <div class="test-content">
+                                <h2>Geometry ACT Test Simulation</h2>
+                                <p>Take a timed test that simulates the geometry questions you'll see on the ACT. This will help you identify your strengths and areas for improvement.</p>
+                                
+                                <div class="test-intro">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <h3>Test Details</h3>
+                                            <ul>
+                                                <li><strong>Time Limit:</strong> 15 minutes</li>
+                                                <li><strong>Questions:</strong> 10 geometry questions in ACT format</li>
+                                                <li><strong>Topics Covered:</strong> Angles, triangles, quadrilaterals, circles, coordinate geometry, and 3D shapes</li>
+                                                <li><strong>Scoring:</strong> Instant results with detailed explanations</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="test-start-card">
+                                                <h3>Ready to Test Your Skills?</h3>
+                                                <p>This simulation will help you prepare for the actual ACT math section.</p>
+                                                <button class="btn btn-primary btn-lg" onclick="startTest()">Start Test</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="test-container" class="mt-4 d-none">
+                                    <!-- Test content will be loaded here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="game-footer">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 ACT Quest: Path to 30+</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>Created for July 2025 ACT Test Prep</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/math-modules.js"></script>
+    <script src="../../js/geometry.js"></script>
+</body>
+</html>

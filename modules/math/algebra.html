@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebra Mastery | ACT Quest</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/math-modules.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container-fluid game-container">
+        <!-- Header/Navigation -->
+        <header class="game-header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../../index.html">ACT Quest: Path to 30+</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../../index.html#math">Math Arena</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#english">English Realm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#reading">Reading Kingdom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#progress">Your Journey</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+            <!-- Module Header -->
+            <section class="module-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h1>Algebra Mastery</h1>
+                            <p class="lead">Master the art of solving and graphing equations to conquer the ACT Math section!</p>
+                            <div class="module-progress">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="module-icon">
+                                <i class="fas fa-square-root-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module Navigation -->
+            <section class="module-navigation">
+                <div class="container">
+                    <ul class="nav nav-pills nav-fill" id="moduleTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="learn-tab" data-bs-toggle="tab" data-bs-target="#learn" type="button" role="tab">Learn</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="practice-tab" data-bs-toggle="tab" data-bs-target="#practice" type="button" role="tab">Practice</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="challenge-tab" data-bs-toggle="tab" data-bs-target="#challenge" type="button" role="tab">Challenge</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="test-tab" data-bs-toggle="tab" data-bs-target="#test" type="button" role="tab">Test</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Module Content -->
+            <section class="module-content">
+                <div class="container">
+                    <div class="tab-content" id="moduleTabContent">
+                        <!-- Learn Tab -->
+                        <div class="tab-pane fade show active" id="learn" role="tabpanel" aria-labelledby="learn-tab">
+                            <div class="learn-content">
+                                <h2>Algebra Fundamentals</h2>
+                                
+                                <div class="learn-section">
+                                    <h3>Linear Equations</h3>
+                                    <p>Linear equations are the foundation of algebra and appear frequently on the ACT. They take the form:</p>
+                                    <div class="math-formula">
+                                        \[ y = mx + b \]
+                                    </div>
+                                    <p>Where:</p>
+                                    <ul>
+                                        <li>\(m\) is the slope (rate of change)</li>
+                                        <li>\(b\) is the y-intercept (where the line crosses the y-axis)</li>
+                                    </ul>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>Find the slope and y-intercept of the line \(2x + 3y = 6\)</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Rearrange to slope-intercept form (y = mx + b)</p>
+                                            <div class="math-formula">
+                                                \[ 2x + 3y = 6 \]
+                                                \[ 3y = 6 - 2x \]
+                                                \[ y = \frac{6 - 2x}{3} \]
+                                                \[ y = \frac{6}{3} - \frac{2x}{3} \]
+                                                \[ y = 2 - \frac{2}{3}x \]
+                                                \[ y = -\frac{2}{3}x + 2 \]
+                                            </div>
+                                            <p><strong>Step 2:</strong> Identify the slope and y-intercept</p>
+                                            <p>Slope (m) = \(-\frac{2}{3}\)</p>
+                                            <p>y-intercept (b) = 2</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Parallel and Perpendicular Lines</h4>
+                                        <ul>
+                                            <li>Parallel lines have the same slope</li>
+                                            <li>Perpendicular lines have slopes that are negative reciprocals of each other (product = -1)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Quadratic Equations</h3>
+                                    <p>Quadratic equations are second-degree equations that take the form:</p>
+                                    <div class="math-formula">
+                                        \[ ax^2 + bx + c = 0 \]
+                                    </div>
+                                    <p>The solutions to a quadratic equation can be found using the quadratic formula:</p>
+                                    <div class="math-formula">
+                                        \[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>Solve the quadratic equation \(2x^2 - 5x - 3 = 0\)</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Identify the values of a, b, and c</p>
+                                            <p>a = 2, b = -5, c = -3</p>
+                                            
+                                            <p><strong>Step 2:</strong> Substitute into the quadratic formula</p>
+                                            <div class="math-formula">
+                                                \[ x = \frac{-(-5) \pm \sqrt{(-5)^2 - 4(2)(-3)}}{2(2)} \]
+                                                \[ x = \frac{5 \pm \sqrt{25 + 24}}{4} \]
+                                                \[ x = \frac{5 \pm \sqrt{49}}{4} \]
+                                                \[ x = \frac{5 \pm 7}{4} \]
+                                            </div>
+                                            
+                                            <p><strong>Step 3:</strong> Calculate the two solutions</p>
+                                            <div class="math-formula">
+                                                \[ x = \frac{5 + 7}{4} = \frac{12}{4} = 3 \]
+                                                \[ x = \frac{5 - 7}{4} = \frac{-2}{4} = -\frac{1}{2} \]
+                                            </div>
+                                            <p>The solutions are x = 3 and x = -\(\frac{1}{2}\)</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Discriminant</h4>
+                                        <p>The discriminant (\(b^2 - 4ac\)) tells you about the nature of the solutions:</p>
+                                        <ul>
+                                            <li>If \(b^2 - 4ac > 0\), there are two real solutions</li>
+                                            <li>If \(b^2 - 4ac = 0\), there is one real solution (repeated root)</li>
+                                            <li>If \(b^2 - 4ac < 0\), there are no real solutions (complex solutions)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Systems of Equations</h3>
+                                    <p>Systems of equations involve solving multiple equations simultaneously. On the ACT, you'll often see systems of two linear equations:</p>
+                                    <div class="math-formula">
+                                        \[ \begin{cases}
+                                        a_1x + b_1y = c_1 \\
+                                        a_2x + b_2y = c_2
+                                        \end{cases} \]
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>Solve the system of equations:</p>
+                                        <div class="math-formula">
+                                            \[ \begin{cases}
+                                            2x + y = 7 \\
+                                            3x - 2y = 4
+                                            \end{cases} \]
+                                        </div>
+                                        
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Solve for y in the first equation</p>
+                                            <div class="math-formula">
+                                                \[ y = 7 - 2x \]
+                                            </div>
+                                            
+                                            <p><strong>Step 2:</strong> Substitute this expression for y into the second equation</p>
+                                            <div class="math-formula">
+                                                \[ 3x - 2(7 - 2x) = 4 \]
+                                                \[ 3x - 14 + 4x = 4 \]
+                                                \[ 7x - 14 = 4 \]
+                                                \[ 7x = 18 \]
+                                                \[ x = \frac{18}{7} = 2\frac{4}{7} \]
+                                            </div>
+                                            
+                                            <p><strong>Step 3:</strong> Find y by substituting the value of x back into the first equation</p>
+                                            <div class="math-formula">
+                                                \[ y = 7 - 2(2\frac{4}{7}) \]
+                                                \[ y = 7 - 2(\frac{18}{7}) \]
+                                                \[ y = 7 - \frac{36}{7} \]
+                                                \[ y = \frac{49 - 36}{7} = \frac{13}{7} = 1\frac{6}{7} \]
+                                            </div>
+                                            
+                                            <p>The solution is \(x = 2\frac{4}{7}\) and \(y = 1\frac{6}{7}\)</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Types of Solutions for Systems</h4>
+                                        <ul>
+                                            <li>One unique solution: Lines intersect at exactly one point</li>
+                                            <li>No solution: Lines are parallel (inconsistent system)</li>
+                                            <li>Infinitely many solutions: Lines are the same (dependent system)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Inequalities</h3>
+                                    <p>Inequalities involve relationships using &lt;, &gt;, ≤, or ≥ instead of equals signs. Key rules to remember:</p>
+                                    <ul>
+                                        <li>When multiplying or dividing both sides by a negative number, reverse the inequality sign</li>
+                                        <li>You can add or subtract the same value from both sides without changing the inequality</li>
+                                    </ul>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>Solve the inequality \(3x - 4 < 5x + 8\)</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Rearrange to isolate x terms on one side</p>
+                                            <div class="math-formula">
+                                                \[ 3x - 4 < 5x + 8 \]
+                                                \[ 3x - 5x < 8 + 4 \]
+                                                \[ -2x < 12 \]
+                                            </div>
+                                            
+                                            <p><strong>Step 2:</strong> Divide both sides by -2 (remember to flip the inequality sign)</p>
+                                            <div class="math-formula">
+                                                \[ \frac{-2x}{-2} > \frac{12}{-2} \]
+                                                \[ x > -6 \]
+                                            </div>
+                                            
+                                            <p>The solution is x > -6</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Compound Inequalities</h4>
+                                        <p>Compound inequalities combine multiple conditions:</p>
+                                        <ul>
+                                            <li>"And" inequalities: Both conditions must be true (intersection)</li>
+                                            <li>"Or" inequalities: At least one condition must be true (union)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Absolute Value Equations and Inequalities</h3>
+                                    <p>Absolute value represents the distance from zero on a number line. For any real number x:</p>
+                                    <div class="math-formula">
+                                        \[ |x| = \begin{cases}
+                                        x, & \text{if } x \geq 0 \\
+                                        -x, & \text{if } x < 0
+                                        \end{cases} \]
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>Solve the absolute value equation \(|2x - 3| = 7\)</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Set up two equations</p>
+                                            <div class="math-formula">
+                                                \[ 2x - 3 = 7 \text{ or } 2x - 3 = -7 \]
+                                            </div>
+                                            
+                                            <p><strong>Step 2:</strong> Solve each equation</p>
+                                            <div class="math-formula">
+                                                \[ 2x - 3 = 7 \]
+                                                \[ 2x = 10 \]
+                                                \[ x = 5 \]
+                                            </div>
+                                            <div class="math-formula">
+                                                \[ 2x - 3 = -7 \]
+                                                \[ 2x = -4 \]
+                                                \[ x = -2 \]
+                                            </div>
+                                            
+                                            <p>The solutions are x = 5 and x = -2</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Absolute Value Inequalities</h4>
+                                        <ul>
+                                            <li>|x| < a means -a < x < a (values between -a and a)</li>
+                                            <li>|x| > a means x < -a or x > a (values less than -a or greater than a)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="next-steps">
+                                    <h3>Ready to Practice?</h3>
+                                    <p>Now that you've learned the fundamentals of algebra, test your knowledge with practice problems!</p>
+                                    <button class="btn btn-primary" onclick="document.getElementById('practice-tab').click()">Go to Practice</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Practice Tab -->
+                        <div class="tab-pane fade" id="practice" role="tabpanel" aria-labelledby="practice-tab">
+                            <div class="practice-content">
+                                <h2>Practice Problems</h2>
+                                <p>Test your understanding with these practice problems. Select a difficulty level to begin.</p>
+                                
+                                <div class="difficulty-selector">
+                                    <button class="btn btn-success" onclick="loadPracticeProblems('easy')">Easy</button>
+                                    <button class="btn btn-warning" onclick="loadPracticeProblems('medium')">Medium</button>
+                                    <button class="btn btn-danger" onclick="loadPracticeProblems('hard')">Hard</button>
+                                </div>
+                                
+                                <div id="practice-problems-container" class="mt-4">
+                                    <!-- Practice problems will be loaded here -->
+                                    <div class="text-center">
+                                        <p>Select a difficulty level to load practice problems.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Challenge Tab -->
+                        <div class="tab-pane fade" id="challenge" role="tabpanel" aria-labelledby="challenge-tab">
+                            <div class="challenge-content">
+                                <h2>Algebra Challenge</h2>
+                                <p>Put your algebra skills to the test with these timed challenges. Complete them to earn badges and level up your character!</p>
+                                
+                                <div class="challenge-cards">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="challenge-card">
+                                                <div class="challenge-card-header">
+                                                    <h3>Linear Equations Challenge</h3>
+                                                    <span class="badge bg-primary">100 XP</span>
+                                                </div>
+                                                <div class="challenge-card-body">
+                                                    <p>Solve 5 linear equation problems in 5 minutes.</p>
+                                                    <div class="challenge-stats">
+                                                        <div><i class="fas fa-clock"></i> 5 minutes</div>
+                                                        <div><i class="fas fa-star"></i> 5 problems</div>
+                                                    </div>
+                                                </div>
+                                                <div class="challenge-card-footer">
+                                                    <button class="btn btn-primary" onclick="startChallenge('linear')">Start Challenge</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-4">
+                                            <div class="challenge-card">
+                                                <div class="challenge-card-header">
+                                                    <h3>Quadratic Equations Challenge</h3>
+                                                    <span class="badge bg-primary">150 XP</span>
+                                                </div>
+                                                <div class="challenge-card-body">
+                                                    <p>Solve 5 quadratic equation problems in 7 minutes.</p>
+                                                    <div class="challenge-stats">
+                                                        <div><i class="fas fa-clock"></i> 7 minutes</div>
+                                                        <div><i class="fas fa-star"></i> 5 problems</div>
+                                                    </div>
+                                                </div>
+                                                <div class="challenge-card-footer">
+                                                    <button class="btn btn-primary" onclick="startChallenge('quadratic')">Start Challenge</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-4">
+                                            <div class="challenge-card">
+                                                <div class="challenge-card-header">
+                                                    <h3>Systems of Equations Challenge</h3>
+                                                    <span class="badge bg-primary">200 XP</span>
+                                                </div>
+                                                <div class="challenge-card-body">
+                                                    <p>Solve 5 systems of equations problems in 10 minutes.</p>
+                                                    <div class="challenge-stats">
+                                                        <div><i class="fas fa-clock"></i> 10 minutes</div>
+                                                        <div><i class="fas fa-star"></i> 5 problems</div>
+                                                    </div>
+                                                </div>
+                                                <div class="challenge-card-footer">
+                                                    <button class="btn btn-primary" onclick="startChallenge('systems')">Start Challenge</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="challenge-container" class="mt-4 d-none">
+                                    <!-- Challenge content will be loaded here -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Test Tab -->
+                        <div class="tab-pane fade" id="test" role="tabpanel" aria-labelledby="test-tab">
+                            <div class="test-content">
+                                <h2>Algebra ACT Test Simulation</h2>
+                                <p>Take a timed test that simulates the algebra questions you'll see on the ACT. This will help you identify your strengths and areas for improvement.</p>
+                                
+                                <div class="test-intro">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <h3>Test Details</h3>
+                                            <ul>
+                                                <li><strong>Time Limit:</strong> 15 minutes</li>
+                                                <li><strong>Questions:</strong> 10 algebra questions in ACT format</li>
+                                                <li><strong>Topics Covered:</strong> Linear equations, quadratic equations, systems of equations, inequalities, and absolute value</li>
+                                                <li><strong>Scoring:</strong> Instant results with detailed explanations</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="test-start-card">
+                                                <h3>Ready to Test Your Skills?</h3>
+                                                <p>This simulation will help you prepare for the actual ACT math section.</p>
+                                                <button class="btn btn-primary btn-lg" onclick="startTest()">Start Test</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="test-container" class="mt-4 d-none">
+                                    <!-- Test content will be loaded here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="game-footer">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 ACT Quest: Path to 30+</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>Created for July 2025 ACT Test Prep</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/math-modules.js"></script>
+    <script src="../../js/algebra.js"></script>
+</body>
+</html>

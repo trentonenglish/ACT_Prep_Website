@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions & Formulas | ACT Quest</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/math-modules.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container-fluid game-container">
+        <!-- Header/Navigation -->
+        <header class="game-header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../../index.html">ACT Quest: Path to 30+</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../../index.html#math">Math Arena</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#english">English Realm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#reading">Reading Kingdom</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../index.html#progress">Your Journey</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+            <!-- Module Header -->
+            <section class="module-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h1>Functions & Formulas</h1>
+                            <p class="lead">Master the art of manipulating and translating functions to conquer the ACT Math section!</p>
+                            <div class="module-progress">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="module-icon">
+                                <i class="fas fa-function"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Module Navigation -->
+            <section class="module-navigation">
+                <div class="container">
+                    <ul class="nav nav-pills nav-fill" id="moduleTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="learn-tab" data-bs-toggle="tab" data-bs-target="#learn" type="button" role="tab">Learn</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="practice-tab" data-bs-toggle="tab" data-bs-target="#practice" type="button" role="tab">Practice</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="challenge-tab" data-bs-toggle="tab" data-bs-target="#challenge" type="button" role="tab">Challenge</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="test-tab" data-bs-toggle="tab" data-bs-target="#test" type="button" role="tab">Test</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Module Content -->
+            <section class="module-content">
+                <div class="container">
+                    <div class="tab-content" id="moduleTabContent">
+                        <!-- Learn Tab -->
+                        <div class="tab-pane fade show active" id="learn" role="tabpanel" aria-labelledby="learn-tab">
+                            <div class="learn-content">
+                                <h2>Function Fundamentals</h2>
+                                
+                                <div class="learn-section">
+                                    <h3>What is a Function?</h3>
+                                    <p>A function is a relation that assigns exactly one output to each input. Think of a function as a machine that takes an input, performs an operation, and produces an output.</p>
+                                    
+                                    <div class="math-formula">
+                                        \[ f(x) = \text{output when the input is } x \]
+                                    </div>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Function Notation</h4>
+                                        <p>The ACT frequently tests your understanding of function notation. Remember:</p>
+                                        <ul>
+                                            <li>If \(f(x) = 2x + 3\), then \(f(5) = 2(5) + 3 = 13\)</li>
+                                            <li>If \(g(x) = x^2 - 4\), then \(g(-2) = (-2)^2 - 4 = 4 - 4 = 0\)</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>If \(f(x) = 3x^2 - 2x + 5\), find \(f(2)\).</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Substitute \(x = 2\) into the function.</p>
+                                            <div class="math-formula">
+                                                \[ f(2) = 3(2)^2 - 2(2) + 5 \]
+                                                \[ f(2) = 3(4) - 4 + 5 \]
+                                                \[ f(2) = 12 - 4 + 5 \]
+                                                \[ f(2) = 13 \]
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Domain and Range</h3>
+                                    <p>The domain of a function is the set of all possible input values. The range is the set of all possible output values.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Finding Domain Restrictions</h4>
+                                        <p>Common domain restrictions occur when:</p>
+                                        <ul>
+                                            <li>The denominator of a fraction equals zero</li>
+                                            <li>The expression under a square root is negative</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>Find the domain of \(f(x) = \frac{x+3}{x-2}\).</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Identify when the denominator equals zero.</p>
+                                            <div class="math-formula">
+                                                \[ x - 2 = 0 \]
+                                                \[ x = 2 \]
+                                            </div>
+                                            <p><strong>Step 2:</strong> Express the domain.</p>
+                                            <p>The domain is all real numbers except \(x = 2\), which we can write as \(\{x | x \neq 2\}\) or \((-\infty, 2) \cup (2, \infty)\).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Linear Functions</h3>
+                                    <p>Linear functions have the form \(f(x) = mx + b\), where \(m\) is the slope and \(b\) is the y-intercept.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Interpreting Slope</h4>
+                                        <p>The slope \(m\) represents the rate of change of the function:</p>
+                                        <ul>
+                                            <li>Positive slope: Function increases as \(x\) increases</li>
+                                            <li>Negative slope: Function decreases as \(x\) increases</li>
+                                            <li>Zero slope: Function is constant</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>A car rental company charges $40 per day plus $0.25 per mile. Write a function that gives the cost \(C(m)\) of renting a car for one day and driving \(m\) miles.</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Identify the fixed cost and the variable cost.</p>
+                                            <p>Fixed cost = $40</p>
+                                            <p>Variable cost = $0.25 per mile</p>
+                                            
+                                            <p><strong>Step 2:</strong> Write the function.</p>
+                                            <div class="math-formula">
+                                                \[ C(m) = 40 + 0.25m \]
+                                            </div>
+                                            
+                                            <p><strong>Step 3:</strong> Interpret the function.</p>
+                                            <p>The function \(C(m) = 40 + 0.25m\) gives the cost in dollars for renting a car for one day and driving \(m\) miles. The slope of 0.25 means the cost increases by $0.25 for each additional mile driven.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Quadratic Functions</h3>
+                                    <p>Quadratic functions have the form \(f(x) = ax^2 + bx + c\), where \(a \neq 0\). The graph of a quadratic function is a parabola.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Vertex Form</h4>
+                                        <p>The vertex form of a quadratic function is \(f(x) = a(x - h)^2 + k\), where \((h, k)\) is the vertex of the parabola.</p>
+                                        <ul>
+                                            <li>If \(a > 0\), the parabola opens upward and has a minimum value of \(k\) at \(x = h\)</li>
+                                            <li>If \(a < 0\), the parabola opens downward and has a maximum value of \(k\) at \(x = h\)</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>Find the vertex of the quadratic function \(f(x) = 2x^2 - 12x + 19\).</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Convert to vertex form by completing the square.</p>
+                                            <div class="math-formula">
+                                                \[ f(x) = 2x^2 - 12x + 19 \]
+                                                \[ f(x) = 2(x^2 - 6x) + 19 \]
+                                                \[ f(x) = 2(x^2 - 6x + 9 - 9) + 19 \]
+                                                \[ f(x) = 2(x - 3)^2 - 18 + 19 \]
+                                                \[ f(x) = 2(x - 3)^2 + 1 \]
+                                            </div>
+                                            
+                                            <p><strong>Step 2:</strong> Identify the vertex.</p>
+                                            <p>The vertex form is \(f(x) = 2(x - 3)^2 + 1\), so the vertex is at \((3, 1)\).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Function Transformations</h3>
+                                    <p>Function transformations allow us to shift, stretch, compress, or reflect the graph of a function.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Common Transformations</h4>
+                                        <p>Given a function \(f(x)\):</p>
+                                        <ul>
+                                            <li>\(f(x) + k\): Shifts the graph up \(k\) units</li>
+                                            <li>\(f(x) - k\): Shifts the graph down \(k\) units</li>
+                                            <li>\(f(x - h)\): Shifts the graph right \(h\) units</li>
+                                            <li>\(f(x + h)\): Shifts the graph left \(h\) units</li>
+                                            <li>\(a \cdot f(x)\): Vertically stretches (if \(a > 1\)) or compresses (if \(0 < a < 1\)) the graph</li>
+                                            <li>\(-f(x)\): Reflects the graph across the x-axis</li>
+                                            <li>\(f(-x)\): Reflects the graph across the y-axis</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>Describe the transformation from \(f(x) = x^2\) to \(g(x) = -2(x - 3)^2 + 4\).</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Identify each transformation.</p>
+                                            <ul>
+                                                <li>\(-2\): Vertically stretch by a factor of 2 and reflect across the x-axis</li>
+                                                <li>\((x - 3)\): Shift right 3 units</li>
+                                                <li>\(+ 4\): Shift up 4 units</li>
+                                            </ul>
+                                            
+                                            <p><strong>Step 2:</strong> Describe the complete transformation.</p>
+                                            <p>The function \(g(x)\) is obtained from \(f(x) = x^2\) by:</p>
+                                            <ol>
+                                                <li>Stretching vertically by a factor of 2</li>
+                                                <li>Reflecting across the x-axis</li>
+                                                <li>Shifting right 3 units</li>
+                                                <li>Shifting up 4 units</li>
+                                            </ol>
+                                            <p>The result is a downward-facing parabola with vertex at \((3, 4)\).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Function Operations</h3>
+                                    <p>Functions can be combined using arithmetic operations (addition, subtraction, multiplication, division) and composition.</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Function Composition</h4>
+                                        <p>The composition of functions \(f\) and \(g\) is denoted as \((f \circ g)(x) = f(g(x))\).</p>
+                                        <p>To find \(f(g(x))\), substitute \(g(x)\) for the input variable in \(f\).</p>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>If \(f(x) = 2x + 3\) and \(g(x) = x^2 - 1\), find \((f \circ g)(2)\).</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Find \(g(2)\).</p>
+                                            <div class="math-formula">
+                                                \[ g(2) = 2^2 - 1 = 4 - 1 = 3 \]
+                                            </div>
+                                            
+                                            <p><strong>Step 2:</strong> Substitute \(g(2)\) into \(f\).</p>
+                                            <div class="math-formula">
+                                                \[ (f \circ g)(2) = f(g(2)) = f(3) = 2(3) + 3 = 6 + 3 = 9 \]
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="learn-section">
+                                    <h3>Exponential and Logarithmic Functions</h3>
+                                    <p>Exponential functions have the form \(f(x) = a \cdot b^x\), where \(a\) and \(b\) are constants and \(b > 0, b \neq 1\).</p>
+                                    <p>Logarithmic functions have the form \(f(x) = \log_b(x)\), where \(b\) is the base and \(b > 0, b \neq 1\).</p>
+                                    
+                                    <div class="key-concept">
+                                        <h4>Key ACT Concept: Properties of Logarithms</h4>
+                                        <ul>
+                                            <li>\(\log_b(xy) = \log_b(x) + \log_b(y)\)</li>
+                                            <li>\(\log_b\left(\frac{x}{y}\right) = \log_b(x) - \log_b(y)\)</li>
+                                            <li>\(\log_b(x^n) = n \cdot \log_b(x)\)</li>
+                                            <li>\(b^{\log_b(x)} = x\) for \(x > 0\)</li>
+                                            <li>\(\log_b(b^x) = x\)</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="example-box">
+                                        <h4>Example:</h4>
+                                        <p>Solve the equation \(2^{x+1} = 16\).</p>
+                                        <div class="solution-steps">
+                                            <p><strong>Step 1:</strong> Rewrite 16 as a power of 2.</p>
+                                            <div class="math-formula">
+                                                \[ 16 = 2^4 \]
+                                            </div>
+                                            
+                                            <p><strong>Step 2:</strong> Set the exponents equal.</p>
+                                            <div class="math-formula">
+                                                \[ 2^{x+1} = 2^4 \]
+                                                \[ x + 1 = 4 \]
+                                                \[ x = 3 \]
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="next-steps">
+                                    <h3>Ready to Practice?</h3>
+                                    <p>Now that you've learned the fundamentals of functions, test your knowledge with practice problems!</p>
+                                    <button class="btn btn-primary" onclick="document.getElementById('practice-tab').click()">Go to Practice</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Practice Tab -->
+                        <div class="tab-pane fade" id="practice" role="tabpanel" aria-labelledby="practice-tab">
+                            <div class="practice-content">
+                                <h2>Practice Problems</h2>
+                                <p>Test your understanding with these practice problems. Select a difficulty level to begin.</p>
+                                
+                                <div class="difficulty-selector">
+                                    <button class="btn btn-success" onclick="loadPracticeProblems('easy')">Easy</button>
+                                    <button class="btn btn-warning" onclick="loadPracticeProblems('medium')">Medium</button>
+                                    <button class="btn btn-danger" onclick="loadPracticeProblems('hard')">Hard</button>
+                                </div>
+                                
+                                <div id="practice-problems-container" class="mt-4">
+                                    <!-- Practice problems will be loaded here -->
+                                    <div class="text-center">
+                                        <p>Select a difficulty level to load practice problems.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Challenge Tab -->
+                        <div class="tab-pane fade" id="challenge" role="tabpanel" aria-labelledby="challenge-tab">
+                            <div class="challenge-content">
+                                <h2>Functions Challenge</h2>
+                                <p>Put your function skills to the test with these timed challenges. Complete them to earn badges and level up your character!</p>
+                                
+                                <div class="challenge-cards">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="challenge-card">
+                                                <div class="challenge-card-header">
+                                                    <h3>Function Notation Challenge</h3>
+                                                    <span class="badge bg-primary">100 XP</span>
+                                                </div>
+                                                <div class="challenge-card-body">
+                                                    <p>Evaluate 5 function expressions in 5 minutes.</p>
+                                                    <div class="challenge-stats">
+                                                        <div><i class="fas fa-clock"></i> 5 minutes</div>
+                                                        <div><i class="fas fa-star"></i> 5 problems</div>
+                                                    </div>
+                                                </div>
+                                                <div class="challenge-card-footer">
+                                                    <button class="btn btn-primary" onclick="startChallenge('notation')">Start Challenge</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-4">
+                                            <div class="challenge-card">
+                                                <div class="challenge-card-header">
+                                                    <h3>Function Transformations Challenge</h3>
+                                                    <span class="badge bg-primary">150 XP</span>
+                                                </div>
+                                                <div class="challenge-card-body">
+                                                    <p>Identify 5 function transformations in 7 minutes.</p>
+                                                    <div class="challenge-stats">
+                                                        <div><i class="fas fa-clock"></i> 7 minutes</div>
+                                                        <div><i class="fas fa-star"></i> 5 problems</div>
+                                                    </div>
+                                                </div>
+                                                <div class="challenge-card-footer">
+                                                    <button class="btn btn-primary" onclick="startChallenge('transformations')">Start Challenge</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-4">
+                                            <div class="challenge-card">
+                                                <div class="challenge-card-header">
+                                                    <h3>Function Operations Challenge</h3>
+                                                    <span class="badge bg-primary">200 XP</span>
+                                                </div>
+                                                <div class="challenge-card-body">
+                                                    <p>Solve 5 function composition problems in 10 minutes.</p>
+                                                    <div class="challenge-stats">
+                                                        <div><i class="fas fa-clock"></i> 10 minutes</div>
+                                                        <div><i class="fas fa-star"></i> 5 problems</div>
+                                                    </div>
+                                                </div>
+                                                <div class="challenge-card-footer">
+                                                    <button class="btn btn-primary" onclick="startChallenge('operations')">Start Challenge</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="challenge-container" class="mt-4 d-none">
+                                    <!-- Challenge content will be loaded here -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Test Tab -->
+                        <div class="tab-pane fade" id="test" role="tabpanel" aria-labelledby="test-tab">
+                            <div class="test-content">
+                                <h2>Functions ACT Test Simulation</h2>
+                                <p>Take a timed test that simulates the function questions you'll see on the ACT. This will help you identify your strengths and areas for improvement.</p>
+                                
+                                <div class="test-intro">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <h3>Test Details</h3>
+                                            <ul>
+                                                <li><strong>Time Limit:</strong> 15 minutes</li>
+                                                <li><strong>Questions:</strong> 10 function questions in ACT format</li>
+                                                <li><strong>Topics Covered:</strong> Function notation, domain and range, transformations, and operations</li>
+                                                <li><strong>Scoring:</strong> Instant results with detailed explanations</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="test-start-card">
+                                                <h3>Ready to Test Your Skills?</h3>
+                                                <p>This simulation will help you prepare for the actual ACT math section.</p>
+                                                <button class="btn btn-primary btn-lg" onclick="startTest()">Start Test</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="test-container" class="mt-4 d-none">
+                                    <!-- Test content will be loaded here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="game-footer">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 ACT Quest: Path to 30+</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>Created for July 2025 ACT Test Prep</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/math-modules.js"></script>
+    <script src="../../js/functions.js"></script>
+</body>
+</html>
