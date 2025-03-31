@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
         return new bootstrap.Popover(popoverTriggerEl);
     });
 
+    // Mobile menu handling
+    initMobileMenu();
+
     // Character Creation System
     initCharacterSystem();
 
@@ -22,6 +25,42 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize module interactions
     initModuleInteractions();
 });
+
+// Mobile Menu Handling
+function initMobileMenu() {
+    // Close mobile menu when a nav link is clicked
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            // Check if the navbar is expanded (mobile view)
+            if (window.innerWidth < 992) {
+                // Use Bootstrap's collapse API to hide the menu
+                const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                bsCollapse.hide();
+            }
+        });
+    });
+    
+    // Handle active link state
+    window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('section[id]');
+        let scrollY = window.pageYOffset;
+        
+        sections.forEach(section => {
+            const sectionHeight = section.offsetHeight;
+            const sectionTop = section.offsetTop - 100;
+            const sectionId = section.getAttribute('id');
+            
+            if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                document.querySelector('.navbar-nav a[href*=' + sectionId + ']').classList.add('active');
+            } else {
+                document.querySelector('.navbar-nav a[href*=' + sectionId + ']').classList.remove('active');
+            }
+        });
+    });
+}
 
 // Character Creation System
 function initCharacterSystem() {

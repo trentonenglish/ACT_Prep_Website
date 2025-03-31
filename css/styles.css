@@ -45,18 +45,30 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
 }
 
 .navbar-brand {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: var(--steelers-gold) !important;
+}
+
+.navbar-toggler {
+    border-color: var(--steelers-gold);
+    color: var(--steelers-gold);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 182, 18, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .nav-link {
     color: white !important;
     font-weight: 500;
     transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
 }
 
 .nav-link:hover, .nav-link.active {
@@ -64,26 +76,61 @@ body {
     transform: scale(1.05);
 }
 
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: var(--steelers-black);
+        padding: 1rem;
+        border-radius: 0 0 10px 10px;
+        margin-top: 0.5rem;
+    }
+    
+    .nav-link {
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+}
+
 /* Hero Section */
 .hero-section {
     background: linear-gradient(135deg, var(--pokemon-blue), var(--primary-color));
     color: white;
-    padding: 5rem 2rem;
+    padding: 4rem 1rem;
     text-align: left;
     position: relative;
     overflow: hidden;
 }
 
 .hero-section h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
 }
 
+@media (min-width: 768px) {
+    .hero-section {
+        padding: 5rem 2rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 3.5rem;
+    }
+}
+
 .hero-section p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 2rem;
-    max-width: 80%;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .hero-section p {
+        font-size: 1.2rem;
+        max-width: 80%;
+    }
 }
 
 .hero-buttons .btn {
@@ -102,22 +149,31 @@ body {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-.btn-primary {
-    background-color: var(--steelers-gold);
-    border-color: var(--steelers-gold);
-    color: var(--steelers-black);
-}
-
-.btn-secondary {
-    background-color: var(--dnd-red);
-    border-color: var(--dnd-red);
-    color: white;
-}
-
 /* Character Section */
 .character-section {
-    padding: 4rem 2rem;
+    padding: 3rem 1rem;
     background-color: var(--light-color);
+}
+
+@media (min-width: 768px) {
+    .character-section {
+        padding: 4rem 2rem;
+    }
+}
+
+.character-info-panel, .xp-level-panel, .quest-panel {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .character-info-panel, .xp-level-panel, .quest-panel {
+        margin-bottom: 0;
+    }
 }
 
 .character-section h2 {
@@ -163,33 +219,48 @@ body {
 }
 
 /* Module Sections */
-.module-section {
-    padding: 4rem 2rem;
+.content-section {
+    padding: 3rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .content-section {
+        padding: 4rem 2rem;
+    }
+}
+
+.section-header {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
-.module-section h2 {
-    margin-bottom: 1rem;
+.section-header h2 {
+    color: var(--steelers-black);
     font-weight: 700;
+    margin-bottom: 0.5rem;
 }
 
-.module-section p {
-    margin-bottom: 3rem;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+.module-cards {
+    margin-top: 2rem;
 }
 
 .module-card {
     background-color: white;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 1.5rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     height: 100%;
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .module-card {
+        padding: 2rem;
+    }
 }
 
 .module-card:hover {
@@ -289,22 +360,30 @@ body {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
-    .hero-section {
-        text-align: center;
-        padding: 3rem 1rem;
+@media (max-width: 767px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
     
-    .hero-section p {
-        max-width: 100%;
+    .row {
+        margin-left: -15px;
+        margin-right: -15px;
     }
     
-    .hero-buttons .btn {
-        margin: 0.5rem;
+    .col-md-4, .col-md-6 {
+        padding-left: 15px;
+        padding-right: 15px;
     }
     
-    .module-card {
-        margin-bottom: 1.5rem;
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .btn-lg {
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
     }
 }
 
